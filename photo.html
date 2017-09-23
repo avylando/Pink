@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк. Фотографии</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__menu main-menu">
+          <li class="main-menu__item"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item main-menu__item--active"><a href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+    </header>
+
+    <main class="page-main">
+
+      <section class="photo-head">
+        <div class="photo-head__wrapper">
+          <h1 class="photo-head__title">Фотографии пользователей</h1>
+          <p class="photo-head__text">Взгляните на фотографии, который выкладывают пользователи!
+            Видите, как не хватает ваших?</p>
+        </div>
+      </section>
+
+      <section class="photo-block best-photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Анна <span class="photo-block__post-time">(5 минут назад)</span></h2>
+          <p class="photo-block__post">Прыгать или нет? Напишите в комментарии свой совет и смотрите
+            прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="pnoto-block__likes">Нравится:215</p>
+        </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Левон <span class="photo-block__post-time">(5 часов назад)</span></h2>
+          <p class="photo-block__post">Вчера он на Луну летал, а утром в руки к нам попал.</p>
+          <p class="pnoto-block__likes">Нравится:356</p>
+        </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Антон <span class="photo-block__post-time">(12 часов назад)</span></h2>
+          <p class="photo-block__post">Соседи будут рады!</p>
+          <p class="pnoto-block__likes">Нравится:666</p>
+        </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Борис <span class="photo-block__post-time">(20 часов назад)</span></h2>
+          <p class="photo-block__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="pnoto-block__likes">Нравится:215</p>
+         </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Сергей <span class="photo-block__post-time">(25 часов назад)</span></h2>
+          <p class="photo-block__post">Самая кубанская в мире!</p>
+          <p class="pnoto-block__likes">Нравится:4</p>
+         </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Максим <span class="photo-block__post-time">(40 часов назад)</span></h2>
+          <p class="photo-block__post">Где снег-то?!</p>
+          <p class="pnoto-block__likes">Нравится:150</p>
+        </div>
+      </section>
+
+      <section class="photo-block">
+        <div class="photo-block__wrapper">
+          <img class="photo-block__image" src="http://placehold.it/200x70">
+          <h2 class="photo-block__username">Надежда <span class="photo-block__post-time">(45 часов назад)</span></h2>
+          <p class="photo-block__post">Всем GM и взаимные лайки!</p>
+          <p class="pnoto-block__likes">Нравится:2560</p>
+        </div>
+      </section>
+
+      <section class="photo-editor">
+        <div class="photo-editor__wrapper">
+          <p class="photo-editor_text">Затмите их всех!
+             Выкладывайте все, что накопилось в телефоне!</p>
+          <img class="photo-editor__image" src="http://placehold.it/200x350">
+          <form class="photo-editor__form image-processing" method="post" action="https://echo.htmlacademy.ru">
+            <ul class="image-processing__tools tools-list">
+              <li class="tools-list__item"><svg></svg></li>
+              <li class="tools-list__item"><svg></svg></li>
+              <li class="tools-list__item"><svg></svg></li>
+            </ul>
+            <input class="image-processing__range" type="range">
+            <button class="image-processing__button button" type="submit">Запостить</button>
+            <button class="image-processing__cancel button" type="button">Отмена</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <img class="page-footer__logo" src="http://placehold.it/150x40">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+        <li class="social-list__item"><a href="#"><svg></svg></a></li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="page-footer__developed">Разработано</p>
+        <svg class="page-footer__academy-logo"></svg>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
