@@ -68,13 +68,13 @@
             <legend class="fields__title">С каким приложением путешествовали?</legend>
             <ul class="app-list">
               <li class="app-list__item">
-                <input id="iOs" name="application" type="radio" checked><label for="iOs">Pink для iOs</label>
+                <input id="iOs" name="application" type="radio" value="iOs" checked><label for="iOs">Pink для iOs</label>
               </li>
               <li class="app-list__item">
-                <input id="android" name="application" type="radio"><label for="android">Pink для Android</label>
+                <input id="android" name="application" type="radio" value="android"><label for="android">Pink для Android</label>
               </li>
               <li class="app-list__item">
-                <input id="win-phone" name="application" type="radio"><label for="win-phone">Windows Phone</label>
+                <input id="win-phone" name="application" type="radio" value="windows-phone"><label for="win-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -90,15 +90,17 @@
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="http://placehold.it/150x40">
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item"><a href="#"><svg></svg></a></li>
-        <li class="social-list__item"><a href="#"><svg></svg></a></li>
-        <li class="social-list__item"><a href="#"><svg></svg></a></li>
-      </ul>
-      <div class="page-footer__copyright">
-        <p class="page-footer__developed">Разработано</p>
-        <svg class="page-footer__academy-logo"></svg>
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="http://placehold.it/150x40">
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item"><a href="#"><svg></svg></a></li>
+          <li class="social-list__item"><a href="#"><svg></svg></a></li>
+          <li class="social-list__item"><a href="#"><svg></svg></a></li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer__developed">Разработано</p>
+          <svg class="page-footer__academy-logo"></svg>
+        </div>
       </div>
     </footer>
 
