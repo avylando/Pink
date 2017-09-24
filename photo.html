@@ -7,11 +7,13 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/50x25">
-      </a>
+      <div class="page-header__logo">
+        <a href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/50x25">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__menu main-menu">
           <li class="main-menu__item"><a href="index.html">Главная</a></li>
           <li class="main-menu__item main-menu__item--active"><a href="photo.html">Фотографии</a></li>
@@ -22,10 +24,10 @@
 
     <main class="page-main">
 
-      <section class="photo-head">
-        <div class="photo-head__wrapper">
-          <h1 class="photo-head__title">Фотографии пользователей</h1>
-          <p class="photo-head__text">Взгляните на фотографии, который выкладывают пользователи!
+      <section class="block-head">
+        <div class="block-head__wrapper">
+          <h1 class="block-head__title">Фотографии пользователей</h1>
+          <p class="block-head__text">Взгляните на фотографии, который выкладывают пользователи!
             Видите, как не хватает ваших?</p>
         </div>
       </section>
@@ -52,7 +54,7 @@
       <section class="photo-block">
         <div class="photo-block__wrapper">
           <img class="photo-block__image" src="http://placehold.it/200x70">
-          <h2 class="photo-block__username">Антон <span class="photo-block__post-time">(12 часов назад)</span></h2>
+          <div class="photo-block__username">Антон <span class="photo-block__post-time">(12 часов назад)</span></div>
           <p class="photo-block__post">Соседи будут рады!</p>
           <p class="pnoto-block__likes">Нравится:666</p>
         </div>
@@ -61,7 +63,7 @@
       <section class="photo-block">
         <div class="photo-block__wrapper">
           <img class="photo-block__image" src="http://placehold.it/200x70">
-          <h2 class="photo-block__username">Борис <span class="photo-block__post-time">(20 часов назад)</span></h2>
+          <div class="photo-block__username">Борис <span class="photo-block__post-time">(20 часов назад)</span></div>
           <p class="photo-block__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="pnoto-block__likes">Нравится:215</p>
         </div>
@@ -70,7 +72,7 @@
       <section class="photo-block">
         <div class="photo-block__wrapper">
           <img class="photo-block__image" src="http://placehold.it/200x70">
-          <h2 class="photo-block__username">Сергей <span class="photo-block__post-time">(25 часов назад)</span></h2>
+          <div class="photo-block__username">Сергей <span class="photo-block__post-time">(25 часов назад)</span></div>
           <p class="photo-block__post">Самая кубанская в мире!</p>
           <p class="pnoto-block__likes">Нравится:4</p>
         </div>
@@ -79,7 +81,7 @@
       <section class="photo-block">
         <div class="photo-block__wrapper">
           <img class="photo-block__image" src="http://placehold.it/200x70">
-          <h2 class="photo-block__username">Максим <span class="photo-block__post-time">(40 часов назад)</span></h2>
+          <div class="photo-block__username">Максим <span class="photo-block__post-time">(40 часов назад)</span></div>
           <p class="photo-block__post">Где снег-то?!</p>
           <p class="pnoto-block__likes">Нравится:150</p>
         </div>
@@ -88,7 +90,7 @@
       <section class="photo-block">
         <div class="photo-block__wrapper">
           <img class="photo-block__image" src="http://placehold.it/200x70">
-          <h2 class="photo-block__username">Надежда <span class="photo-block__post-time">(45 часов назад)</span></h2>
+          <div class="photo-block__username">Надежда <span class="photo-block__post-time">(45 часов назад)</span></div>
           <p class="photo-block__post">Всем GM и взаимные лайки!</p>
           <p class="pnoto-block__likes">Нравится:2560</p>
         </div>
@@ -96,7 +98,7 @@
 
       <section class="photo-editor">
         <div class="photo-editor__wrapper">
-          <p class="photo-editor_text">Затмите их всех!
+          <p class="photo-editor__text">Затмите их всех!
             Выкладывайте все, что накопилось в телефоне!</p>
           <img class="photo-editor__image" src="http://placehold.it/200x350">
           <form class="photo-editor__form image-processing" action="https://echo.htmlacademy.ru" method="post">

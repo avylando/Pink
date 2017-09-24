@@ -7,11 +7,13 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/50x25">
-      </a>
+      <div class="page-header__logo">
+        <a href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/50x25">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__menu main-menu">
           <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
           <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
@@ -26,9 +28,9 @@
 
       <section class="promo">
         <img class="promo__poster" src="http://placehold.it/200x350">
-        <div class="promo__links app-stores">
-          <a class="app-stores__main-link button">Скачать приложение</a>
-          <ul class="app-stores__list stores-list">
+        <div class="promo__links">
+          <a class="promo__main-link button">Скачать приложение</a>
+          <ul class="promo__list stores-list">
             <li class="stores-list__item">
               <a href="#">
                 <img src="http://placehold.it/25x25">
@@ -58,15 +60,21 @@
           <p class="description__title">Нам есть, что Вам предложить!</p>
         </div>
         <div class="description__advantages advantages-block">
-          <h3 class="advantages-block__title">Поднимает настроение</h3>
-          <p class="advantages-block__text">Приложение позволит вам победить
-            осеннюю хандру и депрессию буквально в несколько кликов</p>
-          <h3 class="advantages-block__title">Меняет мир вокруг</h3>
-          <p class="advantages-block__text">Сделайте снимок и украсьте его
-            смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <h3 class="advantages-block__title">Заводит новых друзей</h3>
-          <p class="advantages-block__text">Ставьте лайки, комментируйте, делитесь
-            фотографиями с друзьями и заводите новых</p>
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Поднимает настроение</h3>
+            <p class="advantages-block__text">Приложение позволит вам победить
+              осеннюю хандру и депрессию буквально в несколько кликов</p>
+          </div>
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Меняет мир вокруг</h3>
+            <p class="advantages-block__text">Сделайте снимок и украсьте его
+              смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Заводит новых друзей</h3>
+            <p class="advantages-block__text">Ставьте лайки, комментируйте, делитесь
+              фотографиями с друзьями и заводите новых</p>
+          </div>
           <img class="advantages-block__illustration" src="http://placehold.it/120x350">
         </div>
       </section>
@@ -90,14 +98,38 @@
 
       <section class="set-selector">
         <div class="set-selector__wrapper">
-          <div class="set-selector__head">
-            <h3 class="set__selector__title">Стандарт</h3>
-            <p class="set-selector__price">3,99 USD</p>
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <h3 class="set-selector__title">База</h3>
+              <p class="set-selector__price">1,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
           </div>
-          <div class="set-selector__body">
-            <p class="set-selector__option">Розовый фильтр</p>
-            <p class="set-selector__option">Смайлики</p>
-            <p class="set-selector__option">Комментарии</p>
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <h3 class="set-selector__title">Стандарт</h3>
+              <p class="set-selector__price">3,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
+          </div>
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <h3 class="set-selector__title">Анлим</h3>
+              <p class="set-selector__price">9,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
           </div>
         </div>
         <ul class="set-selector__navigation navigation-list">
