@@ -2,11 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк. Главная страница</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__menu main-menu">
+          <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Pink</h1>
+
+      <section class="promo">
+        <img class="promo__poster">
+        <div class="promo__links app-stores">
+          <a class="app-stores__main-link">Скачать приложение</a>
+          <ul class="app-stores__list stores-list">
+            <li class="stores-list__item">
+              <a href="#">
+                <img>
+              </a>
+            </li>
+            <li class="stores-list__item">
+              <a href="#">
+                <img>
+              </a>
+            </li>
+            <li class="stores-list__item">
+              <a href="#">
+                <img>
+              </a>
+            </li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="description">
 
   </body>
 </html>
