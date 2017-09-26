@@ -1,0 +1,22 @@
+.block-head__wrapper {
+  height: 170px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 25%;
+}
+
+.block-head__title {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2em;
+  padding-top: 30px;
+  margin: 0;
+  @include big-ttl-style;
+  @include lr-padding;
+}
+
+.block-head__text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  @include lr-padding;
+}

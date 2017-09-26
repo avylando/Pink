@@ -2,18 +2,19 @@
 @import "mixins.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-menu.scss";
-@import "blocks/page-main.scss";
-@import "blocks/promo.scss";
-@import "blocks/stores-list.scss";
-@import "blocks/description.scss";
-@import "blocks/advantages-block.scss";
-@import "blocks/feedbacks-slider.scss";
-@import "blocks/slider-nav-list.scss";
-@import "blocks/set-selector.scss";
-@import "blocks/set-nav-list.scss";
-@import "blocks/mainpage-footer.scss";
-@import "blocks/contacts-block.scss";
-
+@import "blocks/index/page-main.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/stores-list.scss";
+@import "blocks/index/description.scss";
+@import "blocks/index/advantages-block.scss";
+@import "blocks/index/feedbacks-slider.scss";
+@import "blocks/index/slider-nav-list.scss";
+@import "blocks/index/set-selector.scss";
+@import "blocks/index/set-nav-list.scss";
+@import "blocks/index/mainpage-footer.scss";
+@import "blocks/index/contacts-block.scss";
+@import "blocks/photo/block-head.scss";
+@import "blocks/photo/photo-block.scss";
 
 html {
   max-width: 320px;
@@ -32,13 +33,13 @@ body {
 
 .visually-hidden {
   position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 a {
