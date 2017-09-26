@@ -7,11 +7,13 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image">
-      </a>
+      <div class="page-header__logo">
+        <a href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/50x25">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__menu main-menu">
           <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
           <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
@@ -25,23 +27,23 @@
       <h1 class="visually-hidden">Pink</h1>
 
       <section class="promo">
-        <img class="promo__poster">
-        <div class="promo__links app-stores">
-          <a class="app-stores__main-link">Скачать приложение</a>
-          <ul class="app-stores__list stores-list">
+        <img class="promo__poster" src="http://placehold.it/200x350">
+        <div class="promo__links">
+          <a class="promo__main-link button">Скачать приложение</a>
+          <ul class="promo__list stores-list">
             <li class="stores-list__item">
               <a href="#">
-                <img>
+                <img src="http://placehold.it/25x25">
               </a>
             </li>
             <li class="stores-list__item">
               <a href="#">
-                <img>
+                <img src="http://placehold.it/25x25">
               </a>
             </li>
             <li class="stores-list__item">
               <a href="#">
-                <img>
+                <img src="http://placehold.it/25x25">
               </a>
             </li>
           </ul>
@@ -50,6 +52,117 @@
       </section>
 
       <section class="description">
+
+        <h2 class="visually-hidden">Наши преимущества</h2>
+
+        <div class="description__wrapper">
+          <p class="description__title">Устали от серости мегаполиса?</p>
+          <p class="description__title">Нам есть, что Вам предложить!</p>
+        </div>
+        <div class="description__advantages advantages-block">
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Поднимает настроение</h3>
+            <p class="advantages-block__text">Приложение позволит вам победить
+              осеннюю хандру и депрессию буквально в несколько кликов</p>
+          </div>
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Меняет мир вокруг</h3>
+            <p class="advantages-block__text">Сделайте снимок и украсьте его
+              смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages-block__item">
+            <h3 class="advantages-block__title">Заводит новых друзей</h3>
+            <p class="advantages-block__text">Ставьте лайки, комментируйте, делитесь
+              фотографиями с друзьями и заводите новых</p>
+          </div>
+          <img class="advantages-block__illustration" src="http://placehold.it/120x350">
+        </div>
+      </section>
+
+      <section class="feedbacks">
+        <div class="feedbacks__wrapper slider">
+          <div class="slider__item slide">
+            <h3 class="slide_title">Николай Петров</h3>
+            <p class="slide-text">"Это приложение перевернуло
+              мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой
+              в комментариях к выложенной фотографии!"</p>
+          </div>
+          <ul class="slider__navigation navigation-list">
+            <li class="navigation-list__item navigation-list__item--active"></li>
+            <li class="navigation-list__item"></li>
+            <li class="navigation-list__item"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="set-selector">
+        <div class="set-selector__wrapper">
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <h3 class="set-selector__title">База</h3>
+              <p class="set-selector__price">1,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
+          </div>
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <img class="set-selector__label" src="http://placehold.it/100x20">
+              <h3 class="set-selector__title">Стандарт</h3>
+              <p class="set-selector__price">3,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
+          </div>
+          <div class="set-selector__set">
+            <div class="set-selector__head">
+              <h3 class="set-selector__title">Анлим</h3>
+              <p class="set-selector__price">9,99 USD</p>
+            </div>
+            <div class="set-selector__body">
+              <p class="set-selector__option">Розовый фильтр</p>
+              <p class="set-selector__option">Смайлики</p>
+              <p class="set-selector__option">Комментарии</p>
+            </div>
+          </div>
+        </div>
+        <ul class="set-selector__navigation navigation-list">
+          <li class="navigation-list__item"></li>
+          <li class="navigation-list__item navigation-list__item--active"></li>
+          <li class="navigation-list__item"></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="mainpage-footer">
+      <div class="mainpage-footer__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="mainpage-footer__title">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="mainpage-footer__contacts contacts-block">
+          <div class="contacts-block__phone">
+            <h3 class="contacts-block__title">Звоните:</h3>
+            <p class="contacts-block__text">+7 (812) 555-66-66</p>
+          </div>
+          <div class="contacts-block__mail">
+            <h3 class="contacts-block__title">Пишите:</h3>
+            <p class="contacts-block__text">mail@htmlacademy.ru</p>
+          </div>
+          <div class="contacts-block__adress">
+            <h3 class="contacts-block__title">Приезжайте в гости:</h3>
+            <p class="contacts-block__text">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+        <img class="mainpage-footer__map" src="http://placehold.it/200x200">
+      </div>
+    </footer>
 
   </body>
 </html>
