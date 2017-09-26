@@ -1,0 +1,55 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/stores-list.scss";
+@import "blocks/description.scss";
+@import "blocks/advantages-block.scss";
+@import "blocks/feedbacks-slider.scss";
+@import "blocks/slider-nav-list.scss";
+@import "blocks/set-selector.scss";
+@import "blocks/set-nav-list.scss";
+@import "blocks/mainpage-footer.scss";
+@import "blocks/contacts-block.scss";
+
+
+html {
+  max-width: 320px;
+  max-height: 3430px;
+}
+
+body {
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $firmcolor;
+
+  width: 100%;
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  @include img-sizing;
+}
+
+.button {
+  line-height: 18px;
+  @include ttl-style;
+}

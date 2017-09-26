@@ -1,0 +1,8 @@
+.contacts-block__title {
+  @include ttl-style;
+}
+
+.contacts-block__text {
+  color: $pink-mod;
+  @include big-ttl-style;
+}

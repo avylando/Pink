@@ -1,0 +1,33 @@
+@mixin ttl-style {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin big-ttl-style {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@mixin img-sizing {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin lr-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin list-unstyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin nav-item-style {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: $darkgrey-mod;
+  border-radius: 50%;
+}

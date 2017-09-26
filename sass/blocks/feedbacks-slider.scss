@@ -1,0 +1,17 @@
+.feedbacks-slider {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.feedbacks-slider__title {
+  color: #000000;
+  padding-bottom: 25px;
+  margin: 0;
+  @include ttl-style;
+}
+
+.feedbacks-slider__text {
+  line-height: 30px;
+  margin: 0;
+}
