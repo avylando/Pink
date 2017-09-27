@@ -1,4 +1,5 @@
 .block-head__wrapper {
+
   height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 25%;
@@ -7,7 +8,7 @@
 .block-head__title {
   color: #ffffff;
   text-align: center;
-  line-height: 1.2em;
+  line-height: $line-auto;
   padding-top: 30px;
   margin: 0;
   @include big-ttl-style;
@@ -15,8 +16,9 @@
 }
 
 .block-head__text {
+  line-height: $maxline-h;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin: 0;
+  @include textblock;
   @include lr-padding;
 }

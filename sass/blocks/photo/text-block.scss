@@ -1,0 +1,7 @@
+.text-block__content {
+  line-height: $maxline-h;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  @include textblock;
+  @include lr-padding;
+}

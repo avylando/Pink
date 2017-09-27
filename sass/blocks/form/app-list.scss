@@ -1,0 +1,7 @@
+.app-list {
+  @include list-unstyle;
+}
+
+.app-list__label {
+  @include input-label;
+}

@@ -15,6 +15,15 @@
 @import "blocks/index/contacts-block.scss";
 @import "blocks/photo/block-head.scss";
 @import "blocks/photo/photo-block.scss";
+@import "blocks/photo/text-block.scss";
+@import "blocks/photo/photo-editor.scss";
+@import "blocks/photo/tools-list.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/form/fields.scss";
+@import "blocks/form/achievements-list.scss";
+@import "blocks/form/app-list.scss";
+@import "blocks/form/modal.scss";
 
 html {
   max-width: 320px;
@@ -22,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: $firmcolor;
@@ -51,6 +60,23 @@ img {
 }
 
 .button {
+  font-family: inherit;
   line-height: 18px;
+  padding: 0;
+  @include ttl-style;
+}
+
+.green-button {
+  font-family: inherit;
+  color: #ffffff;
+  line-height: $maxline-h;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: $green-mod;
+  border: none;
+  border-radius: 5px;
   @include ttl-style;
 }

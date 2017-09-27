@@ -26,7 +26,7 @@
   box-sizing: border-box;
   position: relative;
   color: #ffffff;
-  line-height: 30px;
+  line-height: $maxline-h;
   text-align: center;
   background-color: $firmcolor;
   border-left: $setborder;
@@ -60,6 +60,7 @@
 
 .set-selector__option {
   box-sizing: border-box;
+  line-height: $maxline-h;
   margin: 0;
   border-bottom: $setborder;
 }
