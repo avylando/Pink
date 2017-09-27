@@ -1,6 +1,7 @@
 .advantages-block {
   background-color: $grey-mod;
   padding-top: 50px;
+
   @include lr-padding;
 }
 
@@ -8,5 +9,6 @@
   color: #000000;
   padding-top: 35px;
   margin-top: 0;
+
   @include ttl-style;
 }

@@ -11,6 +11,7 @@
   line-height: $line-auto;
   padding-top: 30px;
   margin: 0;
+
   @include big-ttl-style;
   @include lr-padding;
 }
@@ -19,6 +20,7 @@
   line-height: $maxline-h;
   padding-top: 50px;
   padding-bottom: 50px;
+
   @include textblock;
   @include lr-padding;
 }

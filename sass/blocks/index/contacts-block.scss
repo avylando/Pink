@@ -5,6 +5,7 @@
 .contacts-block__title {
   padding-bottom: 10px;
   margin: 0;
+
   @include ttl-style;
 }
 
@@ -12,5 +13,6 @@
   color: $pink-mod;
   padding-bottom: 22px;
   margin: 0;
+
   @include big-ttl-style;
 }
