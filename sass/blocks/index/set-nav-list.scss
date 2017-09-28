@@ -1,0 +1,12 @@
+.set-nav-list {
+  @include list-unstyle;
+  @include nav-list-style;
+}
+
+.set-nav-list__item {
+  @include nav-item-style;
+}
+
+.set-nav-list__item--active {
+  @include nav-item-active;
+}

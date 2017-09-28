@@ -1,0 +1,36 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include lr-padding;
+  @include textblock;
+}
+
+.page-footer__block {
+  height: 33%;
+}
+
+.page-footer__social {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__developed {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}

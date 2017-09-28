@@ -1,0 +1,31 @@
+.feedbacks-slider {
+  position: relative;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.feedbacks-slider::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/grey-mask.png");
+  z-index: 10;
+}
+
+.feedbacks-slider__title {
+  color: #000000;
+  padding-bottom: 25px;
+  margin: 0;
+
+  @include ttl-style;
+}
+
+.feedbacks-slider__text {
+  line-height: $maxline-h;
+  padding-bottom: 30px;
+  margin: 0;
+}

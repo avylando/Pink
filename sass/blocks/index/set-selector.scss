@@ -1,0 +1,91 @@
+.set-selector {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background-color: $grey-mod;
+}
+
+.set-selector__wrapper {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.set-selector__set {
+  display: flex;
+  width: 100%;
+
+  @include lr-padding;
+}
+
+.set-selector__set--hide {
+  display: none;
+}
+
+.set-selector__set--show {
+  display: block;
+}
+
+.set-selector__head {
+  box-sizing: border-box;
+  position: relative;
+  color: #ffffff;
+  line-height: $maxline-h;
+  text-align: center;
+  background-color: $firmcolor;
+  border-left: $setborder;
+  border-right: $setborder;
+}
+
+.set-selector__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.set-selector__head::before {
+  position: absolute;
+  content: "Хит";
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  left: 12px;
+  top: 12px;
+  transform: rotate(315deg);
+  z-index: 10;
+}
+
+.set-selector__title {
+  padding-top: 15px;
+  margin: 0;
+
+  @include ttl-style;
+}
+
+.set-selector__price {
+  padding-bottom: 15px;
+  margin: 0;
+
+  @include big-ttl-style;
+}
+
+.set-selector__body {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #ffffff;
+  border-left: $setborder;
+  border-right: $setborder;
+  border-bottom: $setborder;
+}
+
+.set-selector__option {
+  display: block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: $maxline-h;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}

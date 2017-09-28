@@ -1,0 +1,45 @@
+.page-header {
+  // height: 325px;
+  height: 9%;
+  background-color: $firmcolor;
+}
+
+.page-header__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000000;
+
+  @include lr-padding;
+}
+
+.page-header__logo {
+  &:hover .page-header__logo-icon-path,
+  &:focus .page-header__logo-icon-path {
+    fill: $pink-mod;
+  }
+  &:active .page-header__logo-icon-path {
+    fill: $pink-mod-op;
+  }
+}
+
+.page-header__toggle {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.page-header__toggle {
+  &:hover .page-header__toggle-icon-path,
+  &:focus .page-header__toggle-icon-path {
+    fill: $pink-mod;
+  }
+  &:active .page-header__toggle-icon-path {
+    fill: $pink-mod-op;
+  }
+}

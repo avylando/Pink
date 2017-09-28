@@ -1,0 +1,81 @@
+.photo-block {
+  margin-bottom: 20px;
+}
+
+.best-photo-block {
+  position: relative;
+}
+
+.photo-block__wrapper {
+  background-color: $grey-mod;
+  padding-bottom: 24px;
+
+  @include lr-margin;
+}
+
+.photo-block__image--best {
+  display: block;
+}
+
+.best-photo-block::before {
+  position: absolute;
+  content: "";
+  display: block;
+
+  width: 140px;
+  height: 36px;
+  left: 160px;
+  top: 0;
+
+  background-image: url("../img/image-label.png");
+}
+
+.best-photo-block::after {
+  position: absolute;
+  content: "Панорама дня";
+  display: block;
+  font-family: inherit;
+  font-size: $minifont;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  left: 180px;
+  top: 7px;
+}
+
+.photo-block__username {
+  font-weight: 700;
+  padding-top: 20px;
+
+  @include lr-padding;
+}
+
+.photo-block__post-time {
+  @include time-style;
+}
+
+.photo-block__post {
+  margin: 0;
+
+  @include lr-padding;
+}
+
+.photo-block__likes {
+  position: relative;
+  color: $pink-mod;
+  text-transform: uppercase;
+  padding-top: 15px;
+  margin: 0;
+
+  @include lr-padding;
+}
+
+.photo-block__likes-text {
+  padding-left: 15px;
+}
+
+.photo-block__likes::before {
+  position: absolute;
+  content: "";
+  display: block;
+}

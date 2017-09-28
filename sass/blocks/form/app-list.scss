@@ -1,0 +1,39 @@
+.app-list {
+  @include list-unstyle;
+}
+
+.app-list__item {
+  margin-top: 50px;
+}
+
+.app-list__input {
+  display: none;
+}
+
+.app-list__label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+
+  @include input-label;
+}
+
+.app-list__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  width: 35px;
+  height: 35px;
+  top: -7px;
+  left: 0;
+  background-color: #ffffff;
+  border: $setborder;
+  border-radius: 50%;
+}
+
+.app-list__input:checked + label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

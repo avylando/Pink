@@ -1,0 +1,36 @@
+.photo-editor {
+  background-color: $grey-mod;
+}
+
+.photo-editor__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+
+  @include lr-padding;
+}
+
+.photo-editor__buttons-block {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-top: $setborder;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include lr-padding;
+}
+
+.photo-editor__button {
+  background-color: transparent;
+}
+
+.photo-editor__button--post {
+  color: $pink-mod;
+  margin-bottom: 12px;
+}
+
+.photo-editor__button--cancel {
+  color: $cancel-btn;
+}
