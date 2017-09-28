@@ -22,7 +22,20 @@
   color: #ffffff;
   border-color: #ffffff;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    color: $pink-mod;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &:active {
+    color: $pink-mod-op;
+  }
 }
+
+
 
 .promo__links {
   color: #ffffff;

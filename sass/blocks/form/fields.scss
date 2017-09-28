@@ -37,27 +37,36 @@
 
 .fields__textfield {
   vertical-align: middle;
-  box-sizing: border-box;
-  width: 100%;
   height: 62px;
   padding-left: 23px;
   margin-bottom: 20px;
-  border: $setborder;
 
   @include input-label;
   @include input-style;
 }
 
 .fields__textarea {
-  box-sizing: border-box;
-  width: 100%;
   padding: 20px;
   margin-top: 15px;
-  border: $setborder;
   resize: none;
 
   @include input-label;
   @include input-style;
+}
+
+.fields__textfield,
+.fields__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: $setborder;
+  outline: none;
+  &:hover {
+    border-color: $firmcolor;
+  }
+  &:focus,
+  &:active {
+    border-color: $pink-mod;
+  }
 }
 
 .fields__button-block {

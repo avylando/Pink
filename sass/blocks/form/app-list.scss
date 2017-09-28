@@ -37,3 +37,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.app-list__label {
+  &:hover::before {
+    border-color: $firmcolor;
+  }
+  &:focus::before,
+  &:active::before {
+    border-color: $pink-mod;
+  }
+}

@@ -16,6 +16,14 @@
   cursor: pointer;
 
   @include input-label;
+
+  &:hover::before {
+    border-color: $firmcolor;
+  }
+  &:focus::before,
+  &:active::before {
+    border-color: $pink-mod;
+  }
 }
 
 .achievements-list__label::before {

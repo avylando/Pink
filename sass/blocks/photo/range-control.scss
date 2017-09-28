@@ -20,4 +20,9 @@
   background-color: $grey-mod;
   border: 3px solid $pink-mod;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $pink-mod;
+  }
 }

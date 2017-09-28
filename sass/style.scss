@@ -87,7 +87,20 @@ img {
   background-color: $green-mod;
   border: none;
   border-radius: 5px;
+  outline: none;
   cursor: pointer;
 
   @include ttl-style;
+
+  &:hover,
+  &:focus {
+    background-color: $green-active;
+  }
+  &:active {
+    background-color: $green-active;
+    color: $white-op;
+  }
+  &:disabled {
+    background-color: $lightgrey-mod;
+  }
 }

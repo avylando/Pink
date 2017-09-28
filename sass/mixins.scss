@@ -43,6 +43,8 @@
   margin-right: 8px;
   background-color: $darkgrey-mod;
   border-radius: 50%;
+  outline: none;
+  cursor: pointer;
 }
 
 @mixin nav-item-active {

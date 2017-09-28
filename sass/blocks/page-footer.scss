@@ -17,6 +17,19 @@
   height: 33%;
 }
 
+.page-footer__logo {
+  &:hover .page-footer__icon-path,
+  &:focus .page-footer__icon-path {
+    fill: $pink-mod;
+  }
+  &:active .page-footer__icon-path {
+    fill: $pink-mod-op;
+  }
+  &:active .page-footer__icon-path--word{
+    fill: $firmcolor-op;
+  }
+}
+
 .page-footer__social {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -33,4 +46,17 @@
   vertical-align: top;
   margin-right: 15px;
   margin-bottom: 10px;
+}
+
+.page-footer__link {
+  outline: none;
+
+  &:hover .page-footer__academy-logo-path,
+  &:focus .page-footer__academy-logo-path {
+    fill: $firmcolor;
+  }
+
+  &:active .page-footer__academy-logo-path{
+    fill: $darkgrey-mod;
+  }
 }

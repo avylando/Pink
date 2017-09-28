@@ -29,8 +29,31 @@
 .photo-editor__button--post {
   color: $pink-mod;
   margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $pink-mod;
+    border-color: $pink-mod;
+  }
+  &:active {
+    color: $white-op;
+    background-color: $pink-mod;
+    border-color: $pink-mod;
+  }
 }
 
 .photo-editor__button--cancel {
   color: $cancel-btn;
+
+  &:hover,
+  &:focus {
+    color: $cancel-btn-hover;
+    border-color: $editoricon-fill;
+  }
+  &:active {
+    color: $cancel-btn-active;
+    background-color: $editoricon-fill;
+    border-color: $editoricon-fill;
+  }
 }

@@ -7,6 +7,23 @@
   @include nav-item-style;
 }
 
+.set-nav-list__item {
+  &:hover,
+  &:focus {
+    background-color: $slider-hover;
+  }
+  &:active {
+    background-color: $slider-active;
+  }
+}
+
 .set-nav-list__item--active {
   @include nav-item-active;
+}
+
+.set-nav-list__item--active {
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+  }
 }
