@@ -30,6 +30,7 @@
 .fields__label {
   line-height: $maxline-h;
   padding-left: 22px;
+  margin-bottom: 8px;
 
   @include fields-label;
 }
@@ -37,10 +38,11 @@
 .fields__textfield {
   vertical-align: middle;
   box-sizing: border-box;
-  border: $setborder;
   width: 100%;
   height: 62px;
   padding-left: 23px;
+  margin-bottom: 20px;
+  border: $setborder;
 
   @include input-label;
   @include input-style;
@@ -50,6 +52,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
+  margin-top: 15px;
   border: $setborder;
   resize: none;
 

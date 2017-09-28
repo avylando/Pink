@@ -1,7 +1,12 @@
 .slider-nav-list {
   @include list-unstyle;
+  @include nav-list-style;
 }
 
 .slider-nav-list__item {
   @include nav-item-style;
+}
+
+.slider-nav-list__item--active {
+  @include nav-item-active;
 }
