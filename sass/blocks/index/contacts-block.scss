@@ -1,0 +1,18 @@
+.contacts-block {
+  @include lr-padding;
+}
+
+.contacts-block__title {
+  padding-bottom: 10px;
+  margin: 0;
+
+  @include ttl-style;
+}
+
+.contacts-block__text {
+  color: $pink-mod;
+  padding-bottom: 22px;
+  margin: 0;
+
+  @include big-ttl-style;
+}

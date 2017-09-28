@@ -1,0 +1,21 @@
+.main-menu {
+  text-align: center;
+
+  @include list-unstyle;
+}
+
+.main-menu__item {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.main-menu__link {
+  color: #ffffff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+
+  @include ttl-style;
+}

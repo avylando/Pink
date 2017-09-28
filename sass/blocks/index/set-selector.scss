@@ -1,0 +1,69 @@
+.set-selector {
+  padding-bottom: 45px;
+  background-color: $grey-mod;
+}
+
+.set-selector__wrapper {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.set-selector__set {
+  display: flex;
+  width: 100%;
+
+  @include lr-padding;
+}
+
+.set-selector__set--hide {
+  display: none;
+}
+
+.set-selector__set--show {
+  display: block;
+}
+
+.set-selector__head {
+  box-sizing: border-box;
+  position: relative;
+  color: #ffffff;
+  line-height: $maxline-h;
+  text-align: center;
+  background-color: $firmcolor;
+  border-left: $setborder;
+  border-right: $setborder;
+}
+
+.set-selector__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.set-selector__title {
+  padding-top: 15px;
+  margin: 0;
+
+  @include ttl-style;
+}
+
+.set-selector__price {
+  padding-bottom: 15px;
+  margin: 0;
+
+  @include big-ttl-style;
+}
+
+.set-selector__body {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-left: $setborder;
+  border-right: $setborder;
+}
+
+.set-selector__option {
+  box-sizing: border-box;
+  line-height: $maxline-h;
+  margin: 0;
+  border-bottom: $setborder;
+}

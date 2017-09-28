@@ -1,0 +1,7 @@
+.achievements-list {
+  @include list-unstyle;
+}
+
+.achievements-list__label {
+  @include input-label;
+}

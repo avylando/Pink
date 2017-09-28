@@ -1,0 +1,69 @@
+@mixin ttl-style {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin big-ttl-style {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@mixin img-sizing {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin lr-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin lr-margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@mixin list-unstyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin nav-item-style {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: $darkgrey-mod;
+  border-radius: 50%;
+}
+
+@mixin social-border {
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+}
+
+@mixin time-style {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin textblock {
+  text-align: center;
+  margin: 0;
+}
+
+@mixin fields-label {
+  color: $pink-mod;
+  text-transform: uppercase;
+}
+
+@mixin input-label {
+  font-size: $ttlfont;
+  line-height: $maxline-h;
+}
+
+@mixin input-style {
+  font-family: inherit;
+  color: inherit;
+}

@@ -1,0 +1,7 @@
+.stores-list {
+  @include list-unstyle;
+}
+
+.stores-list__item {
+  display: inline-block;
+}

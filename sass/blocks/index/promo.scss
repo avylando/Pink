@@ -1,0 +1,25 @@
+.promo {
+  // height: 666px;
+  // height: 27%;
+  padding-bottom: 33px;
+  background-color: $firmcolor;
+}
+
+.promo__poster {
+  min-height: 395px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+}
+
+.promo__links {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 27px;
+
+  @include lr-padding;
+}
+
+.promo__text {
+  font-weight: 300;
+  margin: 0;
+}

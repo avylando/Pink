@@ -1,0 +1,15 @@
+.social-list {
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  @include list-unstyle;
+}
+
+.social-list__item {
+  display: inline-block;
+}
+
+.social-list__item:nth-child(2) {
+  padding-left: 12px;
+  padding-right: 12px;
+}

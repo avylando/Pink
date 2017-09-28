@@ -1,0 +1,10 @@
+.tools-list {
+  display: flex;
+  justify-content: space-around;
+
+  @include list-unstyle;
+}
+
+.tools-list__item {
+  display: inline-block;
+}
