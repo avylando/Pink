@@ -2,6 +2,37 @@
   @include list-unstyle;
 }
 
+.achievements-list__item {
+  margin-top: 50px;
+}
+
+.achievements-list__input {
+  display: none;
+}
+
 .achievements-list__label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+
   @include input-label;
+}
+
+.achievements-list__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  width: 35px;
+  height: 35px;
+  top: -7px;
+  left: 0;
+  background-color: #ffffff;
+  border: $setborder;
+}
+
+.achievements-list__input:checked + label::before {
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

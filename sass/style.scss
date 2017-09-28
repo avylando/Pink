@@ -18,6 +18,7 @@
 @import "blocks/photo/text-block.scss";
 @import "blocks/photo/photo-editor.scss";
 @import "blocks/photo/tools-list.scss";
+@import "blocks/photo/range-control.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
 @import "blocks/form/fields.scss";
@@ -60,9 +61,16 @@ img {
 }
 
 .button {
+  display: block;
   font-family: inherit;
   line-height: 18px;
-  padding: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 3px solid;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
 
   @include ttl-style;
 }
@@ -79,6 +87,7 @@ img {
   background-color: $green-mod;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 
   @include ttl-style;
 }

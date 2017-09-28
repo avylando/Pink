@@ -11,8 +11,14 @@
 
 .contacts-block__text {
   color: $pink-mod;
-  padding-bottom: 22px;
-  margin: 0;
+  margin-bottom: 22px;
+  margin-top: 0;
 
   @include big-ttl-style;
+}
+
+.contacts-block__adress {
+  .contacts-block__text {
+  margin-bottom: 40px;
+  }
 }

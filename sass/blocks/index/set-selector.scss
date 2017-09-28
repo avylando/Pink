@@ -1,4 +1,5 @@
 .set-selector {
+  padding-top: 50px;
   padding-bottom: 45px;
   background-color: $grey-mod;
 }
@@ -40,6 +41,20 @@
   left: 0;
 }
 
+.set-selector__head::before {
+  position: absolute;
+  content: "Хит";
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  left: 12px;
+  top: 12px;
+  transform: rotate(315deg);
+  z-index: 10;
+}
+
 .set-selector__title {
   padding-top: 15px;
   margin: 0;
@@ -55,15 +70,22 @@
 }
 
 .set-selector__body {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
   background-color: #ffffff;
   border-left: $setborder;
   border-right: $setborder;
+  border-bottom: $setborder;
 }
 
 .set-selector__option {
+  display: block;
   box-sizing: border-box;
+  text-transform: uppercase;
   line-height: $maxline-h;
-  margin: 0;
-  border-bottom: $setborder;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }

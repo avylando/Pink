@@ -6,9 +6,22 @@
 }
 
 .promo__poster {
+  position: relative;
   min-height: 395px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
+}
+
+.promo__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.promo__main-link {
+  color: #ffffff;
+  border-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .promo__links {
@@ -21,5 +34,6 @@
 
 .promo__text {
   font-weight: 300;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
