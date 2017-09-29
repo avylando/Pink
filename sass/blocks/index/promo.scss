@@ -1,15 +1,21 @@
 .promo {
   // height: 666px;
   // height: 27%;
-  padding-bottom: 33px;
-  background-color: $firmcolor;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
 }
 
 .promo__poster {
   position: relative;
+  width: 320px;
   min-height: 395px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: $firmcolor;
+  background-repeat: no-repeat;
   background-position: center;
+
+  @include lr-padding-reset;
 }
 
 .promo__image {
@@ -35,18 +41,44 @@
   }
 }
 
+.promo__wrapper {
+  width: 320px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  background-color: $firmcolor;
 
+  @include lr-padding-reset;
+}
 
 .promo__links {
   color: #ffffff;
   text-align: center;
-  padding-top: 27px;
 
   @include lr-padding;
+
 }
 
 .promo__text {
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 20px;
+}
+
+
+@media (min-width:$tablet-width) {
+  .promo {
+    width: $tablet-width;
+  }
+
+  .promo__poster {
+    position: relative;
+    width: $tablet-width;
+    min-height: 620px;
+    background-size: cover;
+  }
+
+  .promo__wrapper {
+    position: absolute;
+    background-color: transparent;
+  }
 }

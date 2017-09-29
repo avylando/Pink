@@ -8,10 +8,10 @@
   color: #ffffff;
   line-height: 1.2em;
   text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
   padding-top: 21px;
   padding-bottom: 21px;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
 
   @include ttl-style;
 
@@ -22,4 +22,13 @@
   &:active {
     color: $pink-mod-op;
   }
+}
+
+.main-menu__link {
+  display: block;
+  box-sizing: border-box;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
 }

@@ -1,8 +1,40 @@
 .advantages-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background-color: $grey-mod;
-  // padding-top: 50px;
 
   @include lr-padding;
+  @include lr-padding-reset;
+}
+
+.advantages-block::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;;
+  height: 35px;
+  left: 0;
+  top: -35px;
+  background-image: url("../img/grey-mask.png");
+  z-index: 10;
+}
+
+.advantages-block::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 45px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/white-mask.png");
+  z-index: 10;
+}
+
+.advantages-block__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages-block__title {
@@ -11,4 +43,41 @@
   margin-top: 0;
 
   @include ttl-style;
+}
+
+@media (min-width:$tablet-width) {
+  .advantages-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantages-block {
+    &::before,
+    &::after {
+      width: $tablet-width;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .advantages-block__wrapper {
+    align-items: flex-start;
+    order: 2;
+    width: 320px;
+  }
+
+  .advantages-block__item {
+    text-align: left;
+  }
+
+  .advantages-block__illustration {
+    align-self: flex-start;
+    order: 1;
+    width: 270px;
+  }
+
+  .advantages-block__image {
+    width: 270px;
+    height: 540px;
+  }
 }

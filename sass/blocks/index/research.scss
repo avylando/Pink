@@ -1,0 +1,26 @@
+.research {
+  display: none;
+}
+
+.research__wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__wrapper {
+    width: 620px;
+    min-height: 375px;
+  }
+
+  .research__illustration {
+    width: 300px;
+  }
+
+  .research__effect {
+    width: 320px;
+  }
+}

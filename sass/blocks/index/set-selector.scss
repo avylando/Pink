@@ -1,7 +1,22 @@
 .set-selector {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 45px;
   background-color: $grey-mod;
+
+  @include lr-padding-reset;
+}
+
+.set-selector::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 35px;
+  left: 0;
+  top: -35px;
+  background-image: url("../img/grey-mask.png");
+  z-index: 10;
 }
 
 .set-selector__wrapper {
@@ -11,22 +26,21 @@
 
 .set-selector__set {
   display: flex;
-  width: 100%;
-
-  @include lr-padding;
+  width: 280px;
+  margin: 0 auto;
 }
 
-.set-selector__set--hide {
+.set-selector__set--hide,
+.set-selector__set--options {
   display: none;
 }
 
 .set-selector__set--show {
+  position: relative;
   display: block;
 }
 
 .set-selector__head {
-  box-sizing: border-box;
-  position: relative;
   color: #ffffff;
   line-height: $maxline-h;
   text-align: center;
@@ -38,10 +52,10 @@
 .set-selector__hit {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
 }
 
-.set-selector__head::before {
+.set-selector__set--show::before {
   position: absolute;
   content: "Хит";
   display: block;
@@ -49,7 +63,7 @@
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
-  left: 12px;
+  left: 14px;
   top: 12px;
   transform: rotate(315deg);
   z-index: 10;
@@ -88,4 +102,34 @@
   line-height: $maxline-h;
   padding-top: 17px;
   padding-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .set-selector__set--hide,
+  .set-selector__set--options {
+    display: block;
+  }
+
+  .set-selector__set--hide,
+  .set-selector__set--show {
+    & .set-selector__body {
+      height: 45px;
+    }
+    & .set-selector__option {
+      display: none;
+    }
+    & .set-selector__check-cross {
+      margin: auto;
+    }
+  }
+
+  .set-selector__set {
+    width: 155px;
+    margin: 0;
+  }
+
+  .set-selector__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
