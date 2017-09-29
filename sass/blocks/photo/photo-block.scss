@@ -1,3 +1,7 @@
+.photo-wrapper {
+  display: none;
+}
+
 .photo-block {
   margin-bottom: 20px;
 }
@@ -78,4 +82,14 @@
   position: absolute;
   content: "";
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-wrapper {
+    display: flex;
+  }
+
+  .photo-block {
+    width: 300px;
+  }
 }

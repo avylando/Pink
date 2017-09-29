@@ -1,4 +1,6 @@
 .contacts-block {
+  display: flex;
+  flex-direction: column;
   @include lr-padding;
 }
 
@@ -20,5 +22,23 @@
 .contacts-block__adress {
   .contacts-block__text {
   margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-block__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-block__phone,
+  .contacts-block__mail {
+    width: 310px;
+  }
+
+  .contacts-block__adress {
+    align-self: center;
+    width: 320px;
+
   }
 }
