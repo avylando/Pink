@@ -1,4 +1,6 @@
 .slider-nav-list {
+  z-index: 20;
+
   @include list-unstyle;
   @include nav-list-style;
 }

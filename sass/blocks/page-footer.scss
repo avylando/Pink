@@ -18,6 +18,8 @@
 }
 
 .page-footer__logo {
+  cursor: pointer;
+
   &:hover .page-footer__icon-path,
   &:focus .page-footer__icon-path {
     fill: $pink-mod;
