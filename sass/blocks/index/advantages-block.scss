@@ -1,11 +1,6 @@
 .advantages-block {
-  display: flex;
-  flex-direction: column;
   position: relative;
   background-color: $grey-mod;
-
-  @include lr-padding;
-  @include lr-padding-reset;
 }
 
 .advantages-block::before {
@@ -46,10 +41,6 @@
 }
 
 @media (min-width:$tablet-width) {
-  .advantages-block {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
   .advantages-block {
     &::before,
@@ -61,13 +52,19 @@
   }
 
   .advantages-block__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .advantages-block__list {
     order: 2;
     width: 320px;
   }
 
   .advantages-block__item {
     text-align: left;
+    width: 320px;
   }
 
   .advantages-block__illustration {

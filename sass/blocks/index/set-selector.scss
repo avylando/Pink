@@ -1,10 +1,7 @@
 .set-selector {
-  position: relative;
   padding-top: 50px;
   padding-bottom: 45px;
   background-color: $grey-mod;
-
-  @include lr-padding-reset;
 }
 
 .set-selector::before {
@@ -21,23 +18,32 @@
 
 .set-selector__wrapper {
   display: flex;
+  width: 840px;
   padding-bottom: 35px;
+  transform: translateX(-280px);
+}
+
+.set-selector__wrapper .container {
+  padding: 0;
 }
 
 .set-selector__set {
   display: flex;
+  flex-direction: column;
   width: 280px;
-  margin: 0 auto;
 }
 
-.set-selector__set--hide,
 .set-selector__set--options {
   display: none;
 }
 
-.set-selector__set--show {
+.set-selector__set--hit {
   position: relative;
-  display: block;
+  & .set-selector__head,
+  & .set-selector__body {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .set-selector__head {
@@ -49,13 +55,13 @@
   border-right: $setborder;
 }
 
-.set-selector__hit {
+.set-selector__hit-bg {
   position: absolute;
   top: 0;
   left: 2px;
 }
 
-.set-selector__set--show::before {
+.set-selector__set--hit::before {
   position: absolute;
   content: "Хит";
   display: block;
@@ -111,16 +117,16 @@
     margin: 0;
   }
 
+  .set-selector__wrapper {
+    align-items: flex-end;
+    transform: none;
+  }
+
   .set-selector__head {
     text-transform: uppercase;
   }
 
-  .set-selector__set--hide,
-  .set-selector__set--options {
-    display: block;
-  }
-
-  .set-selector__set--hide {
+  .set-selector__set--hit {
     & .set-selector__head,
     & .set-selector__body {
       border-left: none;
@@ -128,10 +134,9 @@
     }
   }
 
-  .set-selector__set--hide,
-  .set-selector__set--show {
+  .set-selector__set {
     & .set-selector__body {
-      height: 45px;
+      min-height: 45px;
     }
     & .set-selector__option {
       display: none;
@@ -141,13 +146,24 @@
     }
   }
 
+  .set-selector__set--options {
+    display: block;
+
+    & .set-selector__body {
+      border-right: none;
+    }
+    & .set-selector__option {
+      display: block;
+    }
+  }
+
   .set-selector {
-    & .set-selector__set--hide {
+    & .set-selector__set {
       & :first-child {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
       }
-      & :nth-child(2) {
+      & :nth-child(3) {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
@@ -167,10 +183,4 @@
     border-top: $setborder;
   }
 }
-
-  .set-selector__wrapper {
-    align-items: flex-end;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }

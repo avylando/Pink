@@ -1,8 +1,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-menu.scss";
+@import "blocks/header/page-header.scss";
+@import "blocks/header/main-menu.scss";
 @import "blocks/index/page-main.scss";
 @import "blocks/index/promo.scss";
 @import "blocks/index/stores-list.scss";
@@ -10,9 +10,8 @@
 @import "blocks/index/research.scss";
 @import "blocks/index/advantages-block.scss";
 @import "blocks/index/feedbacks-slider.scss";
-@import "blocks/index/slider-nav-list.scss";
+@import "blocks/index/nav-list.scss";
 @import "blocks/index/set-selector.scss";
-@import "blocks/index/set-nav-list.scss";
 @import "blocks/index/mainpage-footer.scss";
 @import "blocks/index/contacts-block.scss";
 @import "blocks/photo/block-head.scss";
@@ -21,8 +20,8 @@
 @import "blocks/photo/photo-editor.scss";
 @import "blocks/photo/tools-list.scss";
 @import "blocks/photo/range-control.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/social-list.scss";
+@import "blocks/footer/page-footer.scss";
+@import "blocks/footer/social-list.scss";
 @import "blocks/form/fields.scss";
 @import "blocks/form/achievements-list.scss";
 @import "blocks/form/app-list.scss";

@@ -1,14 +1,11 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  width: 280px;
   background-color: $firmcolor;
 }
 
-@media (min-width:$tablet-width) {
-  .page-header {
-    width: 620px;
-  }
+.page-header__wrapper {
+  border-bottom: 1px solid #000000;
 }
 
 .page-header__title {
@@ -16,11 +13,7 @@
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 23px;
-  margin-left: -20px;
-  margin-right: -20px;
-  border-bottom: 1px solid #000000;
 
-  @include lr-padding;
 }
 
 .page-header__logo {

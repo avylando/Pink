@@ -10,8 +10,12 @@ body {
   margin: 0 auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
-  width: 280px;
+  max-width: 320px;
   @include lr-padding;
 }
 
@@ -20,7 +24,7 @@ body {
     width: 660px;
   }
   .container {
-    width: 620px;
+    max-width: 660px;
   }
 }
 

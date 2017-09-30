@@ -1,13 +1,15 @@
-.set-nav-list {
+.nav-list {
+  z-index: 20;
+
   @include list-unstyle;
   @include nav-list-style;
 }
 
-.set-nav-list__item {
+.nav-list__item {
   @include nav-item-style;
 }
 
-.set-nav-list__item {
+.nav-list__item {
   &:hover,
   &:focus {
     background-color: $slider-hover;
@@ -17,11 +19,12 @@
   }
 }
 
-.set-nav-list__item--active {
-  @include nav-item-active;
-}
+.nav-list__item--active {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 3px solid $firmcolor;
 
-.set-nav-list__item--active {
   &:hover,
   &:focus {
     background-color: #ffffff;
