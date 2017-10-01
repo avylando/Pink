@@ -1,6 +1,7 @@
 .contacts-block {
   display: flex;
   flex-direction: column;
+
   @include lr-padding;
 }
 
@@ -19,10 +20,8 @@
   @include big-ttl-style;
 }
 
-.contacts-block__adress {
-  .contacts-block__text {
+.contacts-block__adress .contacts-block__text {
   margin-bottom: 40px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -41,12 +40,10 @@
   .contacts-block__adress {
     align-self: center;
     width: 320px;
-
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts-block {
     padding-bottom: 25px;
   }

@@ -10,6 +10,7 @@
   min-height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 25%;
+
   @include lr-padding-reset;
 }
 
@@ -37,7 +38,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .block-head__wrapper {
     min-height: 440px;
     background-size: 140%;
@@ -60,7 +60,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .block-head__text {
     width: 580px;
   }

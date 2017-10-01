@@ -31,10 +31,12 @@
   &:focus .page-footer__icon-path {
     fill: $pink-mod;
   }
+
   &:active .page-footer__icon-path {
     fill: $pink-mod-op;
   }
-  &:active .page-footer__icon-path--word{
+
+  &:active .page-footer__icon-path--word {
     fill: $firmcolor-op;
   }
 }
@@ -65,7 +67,7 @@
     fill: $firmcolor;
   }
 
-  &:active .page-footer__academy-logo-path{
+  &:active .page-footer__academy-logo-path {
     fill: $darkgrey-mod;
   }
 }

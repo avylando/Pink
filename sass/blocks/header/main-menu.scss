@@ -19,6 +19,7 @@
   &:focus {
     color: $pink-mod;
   }
+
   &:active {
     color: $pink-mod-op;
   }
@@ -31,7 +32,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-menu {
     display: flex;
     justify-content: space-between;

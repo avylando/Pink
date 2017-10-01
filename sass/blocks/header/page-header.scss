@@ -22,6 +22,7 @@
   &:focus .page-header__logo-icon-path {
     fill: $pink-mod;
   }
+
   &:active .page-header__logo-icon-path {
     fill: $pink-mod-op;
   }
@@ -42,13 +43,13 @@
   &:focus .page-header__toggle-icon-path {
     fill: $pink-mod;
   }
+
   &:active .page-header__toggle-icon-path {
     fill: $pink-mod-op;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header {
     position: absolute;
     flex-direction: row;

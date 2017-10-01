@@ -40,6 +40,7 @@
     background-color: $pink-mod;
     border-color: $pink-mod;
   }
+
   &:active {
     color: $white-op;
     background-color: $pink-mod;
@@ -55,6 +56,7 @@
     color: $cancel-btn-hover;
     border-color: $editoricon-fill;
   }
+
   &:active {
     color: $cancel-btn-active;
     background-color: $editoricon-fill;
@@ -101,7 +103,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .photo-editor {
     background-color: transparent;
   }
@@ -135,5 +136,4 @@
   .photo-editor__button--post {
     margin-bottom: 0;
   }
-
 }

@@ -7,13 +7,12 @@
 
 .nav-list__item {
   @include nav-item-style;
-}
 
-.nav-list__item {
   &:hover,
   &:focus {
     background-color: $slider-hover;
   }
+
   &:active {
     background-color: $slider-active;
   }

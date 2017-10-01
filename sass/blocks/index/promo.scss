@@ -66,7 +66,7 @@
 }
 
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .promo {
     position: relative;
   }
@@ -89,7 +89,6 @@
     bottom: 0;
     background-color: transparent;
     background-image: none;
-
   }
 
   .promo__links {
@@ -105,8 +104,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
   .promo__wrapper {
     min-height: 850px;
     margin-left: -130px;

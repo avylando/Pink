@@ -34,6 +34,7 @@
 @media (min-width: $tablet-width) {
   .feedbacks-slider__caption {
     display: block;
+    order: 3;
   }
 
   .feedbacks-slider__text {
@@ -46,14 +47,9 @@
     font-size: 20px;
     line-height: $maxline-h;
   }
-
-  .feedbacks-slider__caption {
-    order: 3;
-  }
 }
 
 @media (min-width: $desktop-width) {
-
   .feedbacks-slider {
     min-height: 415px;
   }

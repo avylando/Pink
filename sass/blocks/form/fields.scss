@@ -31,7 +31,6 @@
 }
 
 .fields__contacts {
-
   & .fields__title {
     display: none;
   }
@@ -74,9 +73,11 @@
   width: 100%;
   border: $setborder;
   outline: none;
+
   &:hover {
     border-color: $firmcolor;
   }
+
   &:focus,
   &:active {
     border-color: $pink-mod;
@@ -101,7 +102,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .fields__box {
     margin-bottom: 65px;
     border: $setborder;
@@ -125,7 +125,6 @@
   .fields__checkboxes {
     order: 4;
     min-height: 550px;
-
   }
 
   .fields__contacts {
@@ -210,7 +209,6 @@
   }
 
   .fields__wrapper {
-
     & .container {
       padding-left: 0;
       padding-right: 0;

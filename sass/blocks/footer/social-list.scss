@@ -18,14 +18,14 @@
   outline: none;
 
   @include social-border;
-}
 
-.social-list__item {
   &:hover,
   &:focus {
     border-color: $firmcolor;
   }
+
   &:active {
+
     @include social-border;
 
     & .social-list__icon-path {

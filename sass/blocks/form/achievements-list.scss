@@ -20,6 +20,7 @@
   &:hover::before {
     border-color: $firmcolor;
   }
+
   &:focus::before,
   &:active::before {
     border-color: $pink-mod;
@@ -46,7 +47,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .achievements-list {
     display: flex;
     justify-content: space-between;
