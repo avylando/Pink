@@ -21,10 +21,24 @@ body {
 
 @media (min-width: $tablet-width) {
   body {
+    position: relative;
     width: 660px;
   }
+
   .container {
     max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1200px;
+  }
+
+  .container {
+    max-width: 1200px;
+
+    @include lr-padding-desktop;
   }
 }
 
@@ -62,7 +76,7 @@ img {
   @include ttl-style;
 }
 
-.green-button {
+.square-button {
   font-family: inherit;
   color: #ffffff;
   line-height: $maxline-h;

@@ -58,3 +58,10 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .block-head__text {
+    width: 580px;
+  }
+}

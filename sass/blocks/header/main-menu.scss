@@ -26,9 +26,27 @@
 
 .main-menu__link {
   display: block;
-  box-sizing: border-box;
-  // margin-left: -20px;
-  // margin-right: -20px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 120px;
+    min-height: 110px;
+    width: 740px;
+  }
+
+  .main-menu__link {
+    border: none;
+  }
+
+  .main-menu__item {
+    font-weight: 400;
+    text-transform: none;
+  }
 }

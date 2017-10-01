@@ -4,6 +4,10 @@
   padding-bottom: 60px;
 }
 
+.feedback-slider__quotes {
+  display: none;
+}
+
 .feedbacks-slider__item {
   display: flex;
   flex-direction: column;
@@ -34,13 +38,28 @@
 
   .feedbacks-slider__text {
     order: 1;
+    font-size: $ttlfont;
   }
 
   .feedbacks-slider__title {
     order: 2;
+    font-size: 20px;
+    line-height: $maxline-h;
   }
 
   .feedbacks-slider__caption {
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .feedbacks-slider {
+    min-height: 415px;
+  }
+
+  .feedback-slider__quotes {
+    display: block;
+    margin: 0 auto;
   }
 }

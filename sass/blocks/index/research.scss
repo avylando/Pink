@@ -4,6 +4,8 @@
 
 .research__wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,8 +13,13 @@
     display: block;
   }
 
+  .research__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
   .research__wrapper {
-    width: 620px;
     min-height: 375px;
     margin: 0 auto;
   }
@@ -23,5 +30,25 @@
 
   .research__effect {
     width: 320px;
+  }
+
+  .research__link {
+    color: $pink-mod;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .research {
+    background-color: $grey-mod;
+  }
+
+  .research__illustration {
+    width: 315px;
+  }
+
+  .research__effect {
+    width: 570px;
   }
 }

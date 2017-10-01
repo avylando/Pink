@@ -15,3 +15,13 @@
 .description__wrapper {
   padding-bottom: 25px;
 }
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    font-size: 50px;
+  }
+
+  .description__wrapper {
+    min-height: 315px;
+  }
+}

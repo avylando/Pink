@@ -44,3 +44,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: $desktop-width) {
+
+  .achievements-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .achievements-list__item {
+    width: 260px;
+  }
+}

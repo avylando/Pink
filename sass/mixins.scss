@@ -28,6 +28,11 @@
   margin-right: -20px;
 }
 
+@mixin lr-padding-desktop {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
 @mixin lr-margin {
   margin-left: 20px;
   margin-right: 20px;

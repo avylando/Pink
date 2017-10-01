@@ -1,3 +1,8 @@
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+
 .fields__set {
   display: flex;
   flex-direction: column;
@@ -5,15 +10,13 @@
   padding-top: 36px;
   padding-bottom: 42px;
   margin: 0;
-
-  @include lr-padding;
 }
 
 .fields__set:first-child {
   padding-top: 0;
 }
 
-.fields__set--grey {
+.fields__wrapper--grey {
   background-color: $grey-mod;
 }
 
@@ -25,6 +28,18 @@
 
   @include textblock;
   @include fields-label;
+}
+
+.fields__contacts {
+
+  & .fields__title {
+    display: none;
+  }
+}
+
+.fields__contact-block {
+  display: flex;
+  flex-direction: column;
 }
 
 .fields__label {
@@ -56,7 +71,6 @@
 
 .fields__textfield,
 .fields__textarea {
-  box-sizing: border-box;
   width: 100%;
   border: $setborder;
   outline: none;
@@ -69,19 +83,12 @@
   }
 }
 
-.fields__button-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include lr-padding;
-}
-
 .fields__button {
   width: 100%;
 }
 
 .fields__note {
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -89,7 +96,71 @@
   color: $pink-mod;
 }
 
+.fields__note-plus {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+
+  .fields__box {
+    margin-bottom: 65px;
+    border: $setborder;
+  }
+
+  .fields__set {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .fields__personal {
+    order: 1;
+
+    & .fields__set {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .fields__checkboxes {
+    order: 4;
+    min-height: 550px;
+
+  }
+
+  .fields__contacts {
+    order: 3;
+    min-height: 305px;
+
+    & .fields__title {
+      display: block;
+    }
+  }
+
+  .fields__radio {
+    order: 2;
+    min-height: 300px;
+  }
+
+  .fields__description {
+    order: 5;
+    min-height: 300px;
+  }
+
+  .fields__send-form {
+    order: 6;
+  }
+
+  .fields__wrapper {
+    background-color: transparent;
+  }
+
+  .fields__title {
+    position: absolute;
+    top: -10px;
+    background-color: #ffffff;
+  }
+
   .fields__line {
     display: flex;
     align-items: center;
@@ -103,5 +174,89 @@
     & .fields__textfield {
       margin-bottom: 0;
     }
+  }
+
+  .fields__contact-block {
+    margin: 0 auto;
+
+    & .fields__label {
+      order: 2;
+      margin: 0;
+    }
+
+    & .fields__textfield {
+      order: 1;
+      width: 440px;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .fields__button-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fields__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fields {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .fields__wrapper {
+
+    & .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .fields__personal {
+    width: 438px;
+  }
+
+  .fields__radio {
+    width: 438px;
+  }
+
+  .fields__contacts {
+    width: 100%;
+    min-height: 160px;
+
+    & .fields__set {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .fields__contact-block {
+    width: 373px;
+
+    & .fields__textfield {
+      width: 100%;
+    }
+  }
+
+  .fields__checkboxes {
+    width: 100%;
+    min-height: 230px;
+  }
+
+  .fields__description {
+    width: 100%;
+  }
+
+  .fields__send-form {
+    width: 100%;
+  }
+
+  .fields__note-plus {
+    display: inline;
   }
 }
