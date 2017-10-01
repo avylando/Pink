@@ -36,9 +36,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
 
-.page-header__toggle {
   &:hover .page-header__toggle-icon-path,
   &:focus .page-header__toggle-icon-path {
     fill: $pink-mod;
