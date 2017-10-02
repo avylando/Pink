@@ -1,0 +1,27 @@
+.range-control {
+  position: relative;
+  width: 100%;
+}
+
+.range-control__scale {
+  width: 80%;
+  height: 2px;
+  background-color: $firmcolor;
+  margin: 0 auto;
+}
+
+.range-control__toggle {
+  position: absolute;
+  top: -7px;
+  right: 60px;
+  width: 10px;
+  height: 10px;
+  background-color: $grey-mod;
+  border: 3px solid $pink-mod;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $pink-mod;
+  }
+}

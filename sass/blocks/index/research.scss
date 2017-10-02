@@ -1,0 +1,53 @@
+.research {
+  display: none;
+}
+
+.research__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .research__wrapper {
+    min-height: 375px;
+    margin: 0 auto;
+  }
+
+  .research__illustration {
+    width: 300px;
+  }
+
+  .research__effect {
+    width: 320px;
+  }
+
+  .research__link {
+    color: $pink-mod;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $grey-mod;
+  }
+
+  .research__illustration {
+    width: 315px;
+  }
+
+  .research__effect {
+    width: 570px;
+  }
+}

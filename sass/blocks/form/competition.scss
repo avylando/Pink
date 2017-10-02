@@ -1,0 +1,15 @@
+.competition {
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition {
+    & .container {
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+  }
+}

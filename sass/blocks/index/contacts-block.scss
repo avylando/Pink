@@ -1,4 +1,7 @@
 .contacts-block {
+  display: flex;
+  flex-direction: column;
+
   @include lr-padding;
 }
 
@@ -11,8 +14,52 @@
 
 .contacts-block__text {
   color: $pink-mod;
-  padding-bottom: 22px;
-  margin: 0;
+  margin-bottom: 22px;
+  margin-top: 0;
 
   @include big-ttl-style;
+}
+
+.contacts-block__adress .contacts-block__text {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-block__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts-block__phone,
+  .contacts-block__mail {
+    width: 50%;
+  }
+
+  .contacts-block__adress {
+    align-self: center;
+    width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-block {
+    padding-bottom: 25px;
+  }
+
+  .contacts-block__phone {
+    order: 1;
+    width: 33.33%;
+  }
+
+  .contacts-block__mail {
+    order: 3;
+    width: 33.33%;
+  }
+
+  .contacts-block__adress {
+    order: 2;
+    width: 33.33%;
+  }
 }

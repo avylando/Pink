@@ -1,0 +1,48 @@
+.social-list {
+  display: flex;
+  // justify-content: space-around;
+
+  @include list-unstyle;
+}
+
+.social-list__link {
+  display: block;
+}
+
+.social-list__item {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  outline: none;
+
+  @include social-border;
+
+  &:hover,
+  &:focus {
+    border-color: $firmcolor;
+  }
+
+  &:active {
+    @include social-border;
+
+    & .social-list__icon-path {
+      fill: $pink-mod-op;
+    }
+  }
+}
+
+.social-list__link:nth-child(2) {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.social-list__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

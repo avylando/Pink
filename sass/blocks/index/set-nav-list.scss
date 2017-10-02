@@ -1,9 +1,0 @@
-.set-nav-list {
-  text-align: center;
-
-  @include list-unstyle;
-}
-
-.set-nav-list__item {
-  @include nav-item-style;
-}

@@ -1,3 +1,7 @@
+.photo {
+  width: 100%;
+}
+
 .photo-block {
   margin-bottom: 20px;
 }
@@ -7,14 +11,12 @@
 }
 
 .photo-block__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: $grey-mod;
   padding-bottom: 24px;
 
-  @include lr-margin;
-}
-
-.photo-block__image--best {
-  display: block;
+  @include lr-padding;
 }
 
 .best-photo-block::before {
@@ -43,11 +45,14 @@
   top: 7px;
 }
 
+.photo-block__image {
+  display: block;
+  width: 100%;
+}
+
 .photo-block__username {
   font-weight: 700;
   padding-top: 20px;
-
-  @include lr-padding;
 }
 
 .photo-block__post-time {
@@ -56,8 +61,6 @@
 
 .photo-block__post {
   margin: 0;
-
-  @include lr-padding;
 }
 
 .photo-block__likes {
@@ -65,17 +68,102 @@
   color: $pink-mod;
   text-transform: uppercase;
   padding-top: 15px;
-  margin: 0;
-
-  @include lr-padding;
-}
-
-.photo-block__likes-text {
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 .photo-block__likes::before {
   position: absolute;
   content: "";
   display: block;
+  width: 13px;
+  height: 12px;
+  left: 0;
+  bottom: 7px;
+  background-image: url("../img/icon-heart.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .photo-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    // align-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    // height: 1400px;
+    // min-height: 1400px;
+  }
+
+  .photo-block {
+    flex-basis: calc(50% - 20px);
+    min-height: 455px;
+    margin-right: 20px;
+  }
+
+  .photo-block__image {
+    height: 300px;
+  }
+
+  .best-photo-block {
+    width: 100%;
+    margin-bottom: 50px;
+
+    & .photo-block__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    & .photo-block__image {
+      height: auto;
+    }
+
+    & .photo-block__username {
+      order: 1;
+    }
+
+    & .photo-block__likes {
+      order: 2;
+      padding-left: 0;
+      padding-right: 30px;
+    }
+
+    & .photo-block__likes::before {
+      left: 120px;
+    }
+
+    & .photo-block__post {
+      order: 3;
+    }
+  }
+
+  .photo-block__wrapper {
+    min-height: 155px;
+
+    @include lr-padding-plus;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block {
+    flex-basis: calc(33.33% - 20px);
+    min-height: 555px;
+    margin-bottom: 55px;
+  }
+
+  .photo-block__image {
+    height: 400px;
+  }
+
+  .best-photo-block {
+    & .photo-block__wrapper {
+      width: 940px;
+    }
+
+    & .photo-block__image {
+      height: auto;
+    }
+  }
 }

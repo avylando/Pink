@@ -1,0 +1,107 @@
+body {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $firmcolor;
+  width: 320px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 320px;
+
+  @include lr-padding;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    position: relative;
+    width: 660px;
+  }
+
+  .container {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1200px;
+  }
+
+  .container {
+    max-width: 1200px;
+
+    @include lr-padding-desktop;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  @include img-sizing;
+}
+
+.button {
+  display: block;
+  font-family: inherit;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 3px solid;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+
+  @include ttl-style;
+}
+
+.square-button {
+  font-family: inherit;
+  color: #ffffff;
+  line-height: $maxline-h;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: $green-mod;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+  @include ttl-style;
+
+  &:hover,
+  &:focus {
+    background-color: $green-active;
+  }
+
+  &:active {
+    background-color: $green-active;
+    color: $white-op;
+  }
+
+  &:disabled {
+    background-color: $lightgrey-mod;
+  }
+}

@@ -1,4 +1,6 @@
 .description {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-top: 44px;
 }
@@ -8,4 +10,18 @@
   margin: 0;
 
   @include big-ttl-style;
+}
+
+.description__wrapper {
+  padding-bottom: 25px;
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    font-size: 50px;
+  }
+
+  .description__wrapper {
+    min-height: 315px;
+  }
 }
