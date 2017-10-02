@@ -117,6 +117,7 @@
     margin: 0;
 
     & .set-selector__body {
+      display: block;
       min-height: 45px;
     }
 
@@ -125,7 +126,8 @@
     }
 
     & .set-selector__check-cross {
-      margin: auto;
+      display: block;
+      margin: 8px auto;
     }
   }
 

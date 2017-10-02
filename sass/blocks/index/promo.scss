@@ -33,18 +33,13 @@
 
 .promo__tagline {
   display: none;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: $line-auto;
-  width: 210px;
-  margin-top: 0;
-  margin-bottom: 35px;
 }
 
 .promo__main-link {
   color: #ffffff;
-  border-color: #ffffff;
+  width: 100%;
   margin-bottom: 30px;
+  border-color: #ffffff;
 
   &:hover,
   &:focus {
@@ -92,7 +87,6 @@
   }
 
   .promo__links {
-    width: 300px;
     margin-top: 80px;
     margin-bottom: 100px;
     margin-left: 20px;
@@ -101,6 +95,16 @@
 
   .promo__tagline {
     display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: $line-auto;
+    width: 210px;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .promo__text {
+    width: 300px;
   }
 }
 

@@ -85,16 +85,18 @@
 @media (min-width: $tablet-width) {
   .photo-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    // justify-content: space-between;
+    // align-content: space-between;
     flex-wrap: wrap;
-    min-height: 1400px;
+    margin-right: -20px;
+    // height: 1400px;
+    // min-height: 1400px;
   }
 
   .photo-block {
-    width: 300px;
+    flex-basis: calc(50% - 20px);
     min-height: 455px;
-    margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .photo-block__image {
@@ -146,11 +148,9 @@
 
 @media (min-width: $desktop-width) {
   .photo-block {
+    flex-basis: calc(33.33% - 20px);
     min-height: 555px;
-  }
-
-  .photo-wrapper {
-    min-height: 1160px;
+    margin-bottom: 55px;
   }
 
   .photo-block__image {
