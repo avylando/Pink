@@ -19,31 +19,31 @@
   @include lr-padding;
 }
 
-.best-photo-block::before {
-  position: absolute;
-  content: "";
-  display: block;
+// .best-photo-block::before {
+//   position: absolute;
+//   content: "";
+//   display: block;
 
-  width: 140px;
-  height: 36px;
-  left: 160px;
-  top: 0;
+//   width: 140px;
+//   height: 36px;
+//   left: 160px;
+//   top: 0;
 
-  background-image: url("../img/image-label.png");
-}
+//   background-image: url("../img/image-label.png");
+// }
 
-.best-photo-block::after {
-  position: absolute;
-  content: "Панорама дня";
-  display: block;
-  font-family: inherit;
-  font-size: $minifont;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  left: 180px;
-  top: 7px;
-}
+// .best-photo-block::after {
+//   position: absolute;
+//   content: "Панорама дня";
+//   display: block;
+//   font-family: inherit;
+//   font-size: $minifont;
+//   font-weight: 700;
+//   color: #ffffff;
+//   text-transform: uppercase;
+//   left: 180px;
+//   top: 7px;
+// }
 
 .photo-block__image {
   display: block;
