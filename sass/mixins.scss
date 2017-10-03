@@ -44,24 +44,6 @@
   margin: 0;
 }
 
-@mixin nav-list-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin nav-item-style {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-left: 8px;
-  margin-right: 8px;
-  background-color: $darkgrey-mod;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-}
-
 @mixin social-border {
   border: 3px solid #e9ebec;
   border-radius: 50%;

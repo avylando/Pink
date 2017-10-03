@@ -6,7 +6,6 @@
 }
 
 .contacts-block__title {
-  padding-bottom: 10px;
   margin: 0;
 
   @include ttl-style;
@@ -20,9 +19,17 @@
   @include big-ttl-style;
 }
 
-.contacts-block__adress .contacts-block__text {
-  margin-bottom: 40px;
+.contacts-block__adress {
+  .contacts-block__title {
+    padding-top: 10px;
+  }
+
+  .contacts-block__text {
+    padding-top: 10px;
+    margin-bottom: 40px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .contacts-block__wrapper {

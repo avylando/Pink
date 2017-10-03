@@ -4,7 +4,7 @@
   @include list-unstyle;
 }
 
-.main-menu--opened{
+.main-menu--opened {
   display: block;
 }
 
@@ -19,7 +19,7 @@
   vertical-align: middle;
   width: 100%;
   padding-top: 21px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   @include ttl-style;
 

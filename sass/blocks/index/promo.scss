@@ -31,7 +31,7 @@
   align-items: center;
   color: #ffffff;
   text-align: center;
-  padding-top: 27px;
+  padding-top: 32px;
 }
 
 .promo__tagline {
@@ -58,9 +58,9 @@
 
 .promo__text {
   font-weight: 300;
+  padding-top: 20px;
   padding-bottom: 33px;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin: 0;
 }
 
 
@@ -87,9 +87,8 @@
   }
 
   .promo__links {
-    margin-top: 80px;
+    padding-top: 95px;
     margin-bottom: 100px;
-    margin-left: 20px;
     z-index: 10;
   }
 
@@ -100,11 +99,18 @@
     line-height: $line-auto;
     width: 210px;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+  }
+
+  .promo__main-link {
+    margin-bottom: 47px;
   }
 
   .promo__text {
+    font-size: 18px;
     width: 300px;
+    padding-bottom: 8px;
+    margin-top: 30px;
   }
 }
 

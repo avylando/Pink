@@ -6,15 +6,27 @@
 
 .description__title {
   line-height: $line-auto;
+  padding-top: 34px;
   margin: 0;
 
   @include big-ttl-style;
 }
 
 .description__wrapper {
-  padding-top: 44px;
   padding-bottom: 60px;
 
+}
+
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .description__title {
+    font-size: 40px;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
