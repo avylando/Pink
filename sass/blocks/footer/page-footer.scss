@@ -55,7 +55,7 @@
 .page-footer__developed {
   display: inline-block;
   vertical-align: top;
-  margin-right: 15px;
+  padding-right: 15px;
   margin-bottom: 10px;
 }
 
@@ -95,5 +95,12 @@
 
   .page-footer__social {
     width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__developed {
+    font-size: 18px;
+    padding-right: 10px;
   }
 }
