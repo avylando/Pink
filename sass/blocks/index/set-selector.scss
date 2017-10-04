@@ -1,5 +1,5 @@
 .set-selector {
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 45px;
   background-color: $grey-mod;
 }
@@ -84,7 +84,7 @@
 }
 
 .set-selector__price {
-  padding-bottom: 15px;
+  padding-bottom: 23px;
   margin: 0;
 
   @include big-ttl-style;
@@ -94,8 +94,8 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 25px;
+  padding-right: 16px;
   background-color: #ffffff;
   border-left: $setborder;
   border-right: $setborder;
@@ -108,31 +108,37 @@
   text-transform: uppercase;
   line-height: $maxline-h;
   padding-top: 17px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
+  .set-selector {
+    padding-top: 0;
+    padding-bottom: 33px;
+  }
+
   .set-selector__set {
     width: 25%;
     margin: 0;
+  }
 
-    & .set-selector__body {
-      display: block;
-      min-height: 45px;
-    }
+  .set-selector__body {
+    display: block;
+    min-height: 45px;
+  }
 
-    & .set-selector__option {
-      display: none;
-    }
+  .set-selector__option {
+    display: none;
+  }
 
-    & .set-selector__check-cross {
-      display: block;
-      margin: 8px auto;
-    }
+  .set-selector__check-cross {
+    display: block;
+    margin: 8px auto;
   }
 
   .set-selector__wrapper {
     align-items: flex-end;
+    padding-top: 40px;
     width: 100%;
     transform: none;
   }
@@ -147,6 +153,16 @@
       border-left: none;
       border-right: none;
     }
+  }
+
+  .set-selector__title {
+    font-size: 16px;
+    padding-top: 12px;
+  }
+
+  .set-selector__price {
+    font-size: 18px;
+    padding-bottom: 7px;
   }
 
   .set-selector__set--options {
@@ -190,6 +206,30 @@
 
 @media (min-width: $desktop-width) {
   .set-selector {
-    min-height: 440px;
+    padding-bottom: 60px;
+  }
+
+  .set-selector__wrapper {
+    padding-top: 75px;
+  }
+
+  .set-selector__title {
+    font-size: 18px;
+    padding-top: 18px;
+  }
+
+  .set-selector__price {
+    font-size: 24px;
+    padding-bottom: 22px;
+  }
+
+  .set-selector__body {
+    min-height: 60px;
+  }
+
+  .set-selector__set--options .set-selector__option {
+    font-size: 18px;
+    padding-top: 14px;
+    padding-left: 5px;
   }
 }

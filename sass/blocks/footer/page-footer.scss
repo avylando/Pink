@@ -73,12 +73,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .page-footer-index {
     display: block;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page-footer__logo,

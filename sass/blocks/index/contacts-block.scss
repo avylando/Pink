@@ -6,6 +6,7 @@
 }
 
 .contacts-block__title {
+  padding-bottom: 5px;
   margin: 0;
 
   @include ttl-style;
@@ -25,7 +26,6 @@
   }
 
   .contacts-block__text {
-    padding-top: 10px;
     margin-bottom: 40px;
   }
 }
@@ -39,14 +39,29 @@
     flex-wrap: wrap;
   }
 
-  .contacts-block__phone,
+  .contacts-block__title {
+    padding-bottom: 10px;
+  }
+
+  .contacts-block__phone {
+    width: 50%;
+    padding-right: 30px;
+    margin-bottom: 16px;
+  }
+
   .contacts-block__mail {
     width: 50%;
+    padding-left: 30px;
+    margin-bottom: 16px;
   }
 
   .contacts-block__adress {
     align-self: center;
     width: 320px;
+
+    .contacts-block__text {
+      margin-bottom: 32px;
+    }
   }
 }
 

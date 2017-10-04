@@ -11,7 +11,7 @@
 .mainpage-footer__title {
   line-height: $line-auto;
   padding-top: 48px;
-  padding-bottom: 38px;
+  padding-bottom: 33px;
   margin: 0;
 
   @include big-ttl-style;
@@ -50,9 +50,11 @@
     font-size: 40px;
     width: 370px;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   .mainpage-footer__map {
+    min-height: 375px;
     background-image: url("../img/bg-map-tablet.png");
     background-position: 100% 60%;
   }
@@ -68,6 +70,9 @@
   }
 
   .mainpage-footer__title {
+    font-size: 50px;
+    width: 470px;
+    padding-top: 63px;
     padding-bottom: 65px;
   }
 

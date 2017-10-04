@@ -47,12 +47,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 740px;
+    width: 100%;
   }
 
   .main-menu__link {
     padding-top: 23px;
     padding-bottom: 23px;
+    margin-left: 0;
+    margin-right: 0;
     border: none;
   }
 
