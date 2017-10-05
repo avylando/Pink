@@ -121,8 +121,8 @@
   .advantages__wrapper {
     flex-direction: column;
     align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .advantages__list {
@@ -134,7 +134,7 @@
 
   .advantages__item {
     text-align: center;
-    width: 230px;
+    width: 240px;
   }
 
   .advantages__title {
@@ -146,7 +146,6 @@
   .advantages__text {
     font-size: 18px;
     line-height: $maxline-h;
-    width: 240px;
 
     br {
       display: none;
@@ -156,7 +155,7 @@
   .advantages__images-list {
     display: flex;
     justify-content: space-between;
-    width: 827px;
+    width: 96.25%;
   }
 
   .advantages__illustration {

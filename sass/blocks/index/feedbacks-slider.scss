@@ -60,6 +60,7 @@
   .feedbacks-slider {
     min-height: 415px;
     padding-top: 72px;
+    padding-bottom: 82px;
   }
 
   .feedback-slider__quotes {
@@ -73,7 +74,7 @@
 
   .feedbacks-slider__text {
     width: 690px;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 
   .feedbacks-slider__title {
@@ -84,7 +85,7 @@
     font-size: 18px;
   }
 
-  .feedbacks-slider__nav-list {
+  .feedbacks-slider .nav-list {
     display: none;
   }
 }

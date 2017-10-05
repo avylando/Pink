@@ -1,14 +1,15 @@
 .text-block__content {
   line-height: $maxline-h;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 19px;
+  padding-bottom: 42px;
 
   @include textblock;
-  @include lr-padding;
 }
 
 @media (min-width: $tablet-width) {
   .text-block__content {
     font-size: $ttlfont;
+    padding-top: 45px;
+    padding-bottom: 69px;
   }
 }
