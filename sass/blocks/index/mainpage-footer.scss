@@ -56,7 +56,9 @@
   .mainpage-footer__map {
     min-height: 375px;
     background-image: url("../img/bg-map-tablet.png");
-    background-position: 100% 60%;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .mainpage-footer__mask {
@@ -66,7 +68,7 @@
 
 @media (min-width: $desktop-width) {
   .mainpage-footer {
-    min-height: 870px;
+    margin-bottom: 60px;
   }
 
   .mainpage-footer__title {

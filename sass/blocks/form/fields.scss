@@ -88,10 +88,11 @@
 }
 
 .fields__textarea {
+  height: 200px;
   padding-left: 19px;
   padding-right: 19px;
   padding-top: 12px;
-  padding-bottom: 34px;
+  padding-bottom: 12px;
   margin-top: 10px;
   resize: none;
 
@@ -237,7 +238,9 @@
   }
 
   .fields__textarea {
-    padding-bottom: 27px;
+    height: 193px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .fields__button-block {
@@ -290,12 +293,15 @@
   .fields__set--personal {
     width: 46.28%;
     padding-top: 4px;
+    padding-bottom: 0;
   }
 
   .fields__set--radio {
     width: 46.28%;
     padding-left: 74px;
     padding-top: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 64px;
 
     .fields__title {
       top: -8px;
@@ -304,30 +310,43 @@
   }
 
   .fields__set--contacts {
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    min-height: 160px;
+    padding-bottom: 14px;
 
-    & .fields__set {
-      flex-direction: row;
-      justify-content: space-between;
+    .fields__title {
+      left: 345px;
     }
   }
 
   .fields__contact-block {
-    width: 373px;
-
-    & .fields__textfield {
-      width: 100%;
-    }
+    width: 45.73%;
+    margin-top: 27px;
   }
 
   .fields__set--checkboxes {
     width: 100%;
-    min-height: 230px;
+    padding-right: 0;
+    padding-bottom: 7px;
+
+    .fields__title {
+      left: 257px;
+    }
   }
 
   .fields__set--description {
     width: 100%;
+    padding-bottom: 42px;
+
+    .fields__title {
+      left: 352px;
+    }
+  }
+
+  .fields__textarea {
+    height: 130px;
+    margin-top: 5px;
   }
 
   .fields__button-block {

@@ -73,11 +73,17 @@
 @media (min-width: $desktop-width) {
   .achievements-list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 165px;
   }
 
   .achievements-list__item {
-    width: 260px;
+    width: auto;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 }
