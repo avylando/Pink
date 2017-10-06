@@ -1,8 +1,8 @@
 .contacts-block {
   display: flex;
   flex-direction: column;
-
-  @include lr-padding;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contacts-block__title {

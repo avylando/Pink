@@ -13,8 +13,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @include lr-padding;
   @include textblock;
 }
 
@@ -123,8 +124,22 @@
     padding-top: 33px;
   }
 
+  .page-footer__wrapper {
+    padding-top: 66px;
+  }
+
+  .page-footer__icon {
+    margin-right: auto;
+  }
+
+  .page-footer__logo,
+  .page-footer__copyright {
+    width: 16.3%;
+  }
+
   .page-footer__developed {
     font-size: 18px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -187,7 +187,17 @@
   }
 //
 
-  .best-photo-block .photo-block__wrapper {
-      width: 940px;
+  .best-photo-block {
+    margin-bottom: 49px;
+
+    .photo-block__wrapper {
+      padding-right: 31px;
+      padding-bottom: 0;
+    }
+
+    .photo-block__likes {
+      width: 13.67%;
+      padding-top: 26px;
+    }
   }
 }
