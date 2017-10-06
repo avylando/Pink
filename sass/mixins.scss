@@ -8,29 +8,9 @@
   font-weight: 300;
 }
 
-@mixin img-sizing {
-  max-width: 100%;
-  height: auto;
-}
-
-@mixin lr-padding {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@mixin lr-padding-plus {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 @mixin lr-padding-reset {
   margin-left: -20px;
   margin-right: -20px;
-}
-
-@mixin lr-padding-desktop {
-  padding-left: 130px;
-  padding-right: 130px;
 }
 
 @mixin lr-margin {

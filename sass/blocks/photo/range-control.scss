@@ -31,3 +31,9 @@
     width: 86.55%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-control__scale {
+    width: 81%;
+  }
+}

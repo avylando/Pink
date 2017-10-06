@@ -33,10 +33,10 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
-
-  @include lr-padding;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 // @media (min-width: $tablet-width) {
@@ -48,7 +48,8 @@ body {
   }
 
   .container {
-    @include lr-padding-desktop;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -68,7 +69,8 @@ a {
 }
 
 img {
-  @include img-sizing;
+  max-width: 100%;
+  height: auto;
 }
 
 .button {

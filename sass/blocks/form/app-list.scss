@@ -1,9 +1,11 @@
 .app-list {
   @include list-unstyle;
+
+  margin-top: 39px;
 }
 
 .app-list__item {
-  margin-top: 50px;
+  margin-bottom: 45px;
 }
 
 .app-list__input {
@@ -12,7 +14,7 @@
 
 .app-list__label {
   position: relative;
-  padding-left: 70px;
+  padding-left: 68px;
   cursor: pointer;
 
   @include input-label;
@@ -45,4 +47,10 @@
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .app-list__label {
+    padding-left: 59px;
+  }
 }
