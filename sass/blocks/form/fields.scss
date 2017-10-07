@@ -24,6 +24,10 @@
 
 .fields__set--contacts {
   padding-bottom: 24px;
+
+  .fields__title {
+    display: none;
+  }
 }
 
 .fields__set--radio {
@@ -55,12 +59,6 @@
 
   .fields__title {
     line-height: 18px;
-  }
-}
-
-.fields__set--contacts {
-  .fields__title {
-    display: none;
   }
 }
 
@@ -244,12 +242,15 @@
   }
 
   .fields__button-block {
+    display: flex;
+    justify-content: space-between;
     order: 6;
     align-items: flex-start;
     margin-bottom: 52px;
   }
 
   .fields__button {
+    width: 300px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -271,15 +272,6 @@
     & .fields__textfield {
       margin-bottom: 0;
     }
-  }
-
-  .fields__button-block {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .fields__button {
-    width: 300px;
   }
 }
 
