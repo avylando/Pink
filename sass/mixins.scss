@@ -8,29 +8,9 @@
   font-weight: 300;
 }
 
-@mixin img-sizing {
-  max-width: 100%;
-  height: auto;
-}
-
-@mixin lr-padding {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@mixin lr-padding-plus {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 @mixin lr-padding-reset {
   margin-left: -20px;
   margin-right: -20px;
-}
-
-@mixin lr-padding-desktop {
-  padding-left: 130px;
-  padding-right: 130px;
 }
 
 @mixin lr-margin {
@@ -42,24 +22,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-@mixin nav-list-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin nav-item-style {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-left: 8px;
-  margin-right: 8px;
-  background-color: $darkgrey-mod;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
 }
 
 @mixin social-border {

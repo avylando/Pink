@@ -17,10 +17,17 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 9px;
+  }
+
+  .research__text {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .research__wrapper {
-    min-height: 375px;
+    min-height: 360px;
     margin: 0 auto;
   }
 
@@ -29,7 +36,7 @@
   }
 
   .research__effect {
-    width: 320px;
+    width: 310px;
   }
 
   .research__link {
@@ -40,6 +47,8 @@
 
 @media (min-width: $desktop-width) {
   .research {
+    padding-top: 45px;
+    padding-bottom: 31px;
     background-color: $grey-mod;
   }
 
@@ -49,5 +58,24 @@
 
   .research__effect {
     width: 570px;
+  }
+
+  .research__title {
+    margin-top: 72px;
+    margin-bottom: 22px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .research__text {
+    margin-bottom: 31px;
+  }
+
+  .research__text,
+  .research__link {
+    font-size: 18px;
+    line-height: $maxline-h;
   }
 }

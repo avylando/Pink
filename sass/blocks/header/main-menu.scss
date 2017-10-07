@@ -4,6 +4,14 @@
   @include list-unstyle;
 }
 
+.main-menu--opened {
+  display: block;
+}
+
+.main-menu--closed {
+  display: none;
+}
+
 .main-menu__item {
   color: #ffffff;
   line-height: 1.2em;
@@ -11,9 +19,10 @@
   vertical-align: middle;
   width: 100%;
   padding-top: 21px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   @include ttl-style;
+
 
   &:hover,
   &:focus {
@@ -29,6 +38,8 @@
   display: block;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @include lr-padding-reset;
 }
 
 @media (min-width: $desktop-width) {
@@ -36,13 +47,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 120px;
-    width: 740px;
+    width: 100%;
   }
 
   .main-menu__link {
     padding-top: 23px;
     padding-bottom: 23px;
+    margin-left: 0;
+    margin-right: 0;
     border: none;
   }
 

@@ -1,6 +1,6 @@
 $mobile-width: 320px;
 $tablet-width: 660px;
-$desktop-width: 1200px;
+$desktop-width: 960px;
 $firmcolor: rgb(40, 54, 69);
 $firmcolor-op: rgba(40, 54, 69, 0.3);
 $black-op: rgba(0, 0, 0, 0.3);
@@ -24,3 +24,5 @@ $cancel-btn-hover: #c4c6c8;
 $cancel-btn-active: #ccced2;
 $slider-hover: #7e868f;
 $slider-active: rgba(190, 194, 199, 0.3);
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

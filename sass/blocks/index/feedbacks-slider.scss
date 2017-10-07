@@ -15,6 +15,7 @@
 
 .feedbacks-slider__title {
   color: #000000;
+  padding-top: 3px;
   margin: 0;
 
   @include ttl-style;
@@ -26,15 +27,21 @@
 
 .feedbacks-slider__text {
   line-height: $maxline-h;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 34px;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .feedbacks-slider {
+    padding-bottom: 70px;
+  }
+
   .feedbacks-slider__caption {
     display: block;
     order: 3;
+    margin-top: 5px;
+    margin-bottom: 36px;
   }
 
   .feedbacks-slider__text {
@@ -52,10 +59,33 @@
 @media (min-width: $desktop-width) {
   .feedbacks-slider {
     min-height: 415px;
+    padding-top: 72px;
+    padding-bottom: 82px;
   }
 
   .feedback-slider__quotes {
     display: block;
     margin: 0 auto;
+  }
+
+  .feedbacks-slider__item {
+    align-items: center;
+  }
+
+  .feedbacks-slider__text {
+    width: 690px;
+    padding-top: 52px;
+  }
+
+  .feedbacks-slider__title {
+    font-size: 24px;
+  }
+
+  .feedbacks-slider__caption {
+    font-size: 18px;
+  }
+
+  .feedbacks-slider .nav-list {
+    display: none;
   }
 }

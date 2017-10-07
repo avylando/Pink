@@ -8,7 +8,8 @@
 }
 
 .modal__wrapper {
-  @include lr-padding;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .modal__title {
@@ -29,8 +30,8 @@
   padding-top: 47px;
   padding-bottom: 50px;
   background-color: $grey-mod;
-
-  @include lr-padding;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .modal__button {

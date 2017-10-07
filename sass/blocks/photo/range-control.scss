@@ -4,7 +4,7 @@
 }
 
 .range-control__scale {
-  width: 80%;
+  width: 85%;
   height: 2px;
   background-color: $firmcolor;
   margin: 0 auto;
@@ -12,16 +12,28 @@
 
 .range-control__toggle {
   position: absolute;
-  top: -7px;
-  right: 60px;
-  width: 10px;
-  height: 10px;
+  top: -6px;
+  right: 56px;
+  width: 14px;
+  height: 14px;
   background-color: $grey-mod;
-  border: 3px solid $pink-mod;
+  border: 2px solid $pink-mod;
   border-radius: 50%;
   cursor: pointer;
 
   &:active {
     background-color: $pink-mod;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range-control {
+    width: 86.55%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-control__scale {
+    width: 81%;
   }
 }
