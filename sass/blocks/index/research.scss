@@ -11,13 +11,20 @@
 @media (min-width: $tablet-width) {
   .research {
     display: block;
+    padding-top: 55px;
+    padding-bottom: 85px;
+  }
+
+  .research__image {
+    display: block;
+    width: 238px;
   }
 
   .research__title {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 9px;
   }
 
@@ -27,16 +34,38 @@
   }
 
   .research__wrapper {
-    min-height: 360px;
     margin: 0 auto;
   }
 
   .research__illustration {
-    width: 300px;
+    position: relative;
+    min-width: 238px;
+    width: 38.39%;
+    height: 281px;
+    background-image: url(../img/icon-timer.svg);
+    background-size: 238px auto;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  .research__timer {
+    position: absolute;
+    color: #d12755;
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 149px;
+    padding-left: 30px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-top: 9px;
+    left: 19px;
+    top: 59px;
+    border: 15px solid #d12755;
+    border-radius: 50%;
   }
 
   .research__effect {
-    width: 310px;
+    width: 50%;
   }
 
   .research__link {
@@ -47,21 +76,35 @@
 
 @media (min-width: $desktop-width) {
   .research {
-    padding-top: 45px;
-    padding-bottom: 31px;
+    padding-top: 25px;
+    padding-bottom: 65px;
     background-color: $grey-mod;
   }
 
   .research__illustration {
-    width: 315px;
+    min-width: 298px;
+    width: 31.92%;
+    height: 345px;
+    background-size: 298px auto;
+  }
+
+  .research__timer {
+    font-size: 120px;
+    line-height: 186.84px;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    left: 24px;
+    top: 70px;
   }
 
   .research__effect {
-    width: 570px;
+    width: 61.06%;
   }
 
   .research__title {
-    margin-top: 72px;
+    margin-top: 92px;
     margin-bottom: 22px;
 
     br {

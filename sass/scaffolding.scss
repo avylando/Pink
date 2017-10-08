@@ -20,6 +20,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -43,10 +44,6 @@ body {
 
 
 @media (min-width: $desktop-width) {
-  body {
-    position: relative;
-  }
-
   .container {
     padding-left: 10px;
     padding-right: 10px;

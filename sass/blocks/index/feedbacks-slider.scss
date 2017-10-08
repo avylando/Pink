@@ -4,7 +4,11 @@
   padding-bottom: 60px;
 }
 
-.feedback-slider__quotes {
+.feedback-slider__quotes-image {
+  display: none;
+}
+
+.feedbacks-slider__arrow {
   display: none;
 }
 
@@ -58,14 +62,22 @@
 
 @media (min-width: $desktop-width) {
   .feedbacks-slider {
-    min-height: 415px;
     padding-top: 72px;
     padding-bottom: 82px;
   }
 
-  .feedback-slider__quotes {
+  .feedback-slider__quotes-image {
     display: block;
     margin: 0 auto;
+  }
+
+  .feedback-slider__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedbacks-slider__arrow {
+    display: block;
   }
 
   .feedbacks-slider__item {
@@ -75,6 +87,9 @@
   .feedbacks-slider__text {
     width: 690px;
     padding-top: 52px;
+  }
+  .feedback-slider__quote {
+    display: none;
   }
 
   .feedbacks-slider__title {
