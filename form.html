@@ -7,178 +7,190 @@
   <title>Пинк. Конкурс</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("preview/pink-form-mobile.jpg");
+    }
+    /* Планшет */
+
+    @media ( min-width: 660px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("preview/pink-form-tablet.jpg");
+      }
+    }
+    /* Десктоп */
+
+    @media ( min-width: 960px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("preview/pink-form-desktop.jpg");
+      }
+    }
+  </style>
+  <link href="node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__title">
-        <a class="page-header__logo" href="#">
-          <svg class="page-header__logo-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
-            xml:space="preserve">
-            <g>
-              <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"
-              />
-              <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"
-              />
-              <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"
-              />
-              <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"
-              />
-            </g>
-          </svg>
-        </a>
-        <button class="page-header__toggle" type="button">
-            <svg class="page-header__toggle-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-              <path class="page-header__toggle-icon-path" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__title">
+          <a class="page-header__logo" href="#">
+            <svg class="page-header__logo-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
+              xml:space="preserve">
+              <g>
+                <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"
+                />
+                <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"
+                />
+                <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"
+                />
+                <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"
+                />
+              </g>
             </svg>
+          </a>
+          <button class="page-header__toggle page-header__toggle--cross" type="button">
+            <svg class="page-header__cross-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path class="page-header__cross-icon-path" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+            <div class="page-header__burger">
+              <span class="page-header__burger-icon"></span>
+            </div>
           </button>
+        </div>
+        <nav class="page-header__main-nav">
+          <ul class="page-header__menu main-menu main-menu--opened">
+            <li class="main-menu__item main-menu__item--active">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__menu main-menu">
-        <a class="main-menu__link" href="index.html">
-          <li class="main-menu__item main-menu__item--active">Главная</li>
-        </a>
-        <a class="main-menu__link" href="photo.html">
-          <li class="main-menu__item">Фотографии</li>
-        </a>
-        <a class="main-menu__link" href="form.html">
-          <li class="main-menu__item">Конкурс</li>
-        </a>
-        <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <li class="main-menu__item">HTML Academy</li>
-        </a>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
 
     <section class="block-head">
       <div class="block-head__wrapper">
-        <h1 class="block-head__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="container">
+          <h1 class="block-head__title block-head__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
-      <p class="block-head__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        <span class="block-head__note">Пожалуйста, заполните форму ниже:</span>
-      </p>
+      <div class="container">
+        <p class="block-head__text block-head__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="block-head__note">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
     </section>
 
     <section class="competition">
       <div class="container">
         <form class="competition__form fields" action="https://echo.htmlacademy.ru" method="get">
-          <div class="fields__wrapper fields__personal">
-            <div class="container">
-              <div class="fields__set">
-                <div class="fields__line">
-                  <label class="fields__label" for="surname">Фамилия:</label>
-                  <input class="fields__textfield" id="surname" name="surname" type="text" value="Укажите фамилию *">
-                </div>
-                <div class="fields__line">
-                  <label class="fields__label" for="name">Имя:</label>
-                  <input class="fields__textfield" id="name" name="name" type="text" value="Введите ваше имя *">
-                </div>
-                <div class="fields__line">
-                  <label class="fields__label" for="second-name">Отчество:</label>
-                  <input class="fields__textfield" id="second-name" name="second-name" type="text" value="Ну и отчество тоже">
-                </div>
-              </div>
+          <div class="fields__set fields__set--personal">
+            <div class="fields__line">
+              <label class="fields__label" for="surname">Фамилия:</label>
+              <input class="fields__textfield" id="surname" name="surname" type="text" placeholder="Укажите фамилию *">
+            </div>
+            <div class="fields__line">
+              <label class="fields__label" for="name">Имя:</label>
+              <input class="fields__textfield" id="name" name="name" type="text" placeholder="Введите ваше имя *">
+            </div>
+            <div class="fields__line">
+              <label class="fields__label" for="second-name">Отчество:</label>
+              <input class="fields__textfield" id="second-name" name="second-name" type="text" placeholder="Ну и отчество тоже">
             </div>
           </div>
-          <div class="fields__wrapper fields__wrapper--grey fields__box fields__checkboxes">
-            <div class="container">
-              <div class="fields__set">
-                <h2 class="fields__title">Ваши безбашенные достижения в путешествии</h2>
-                <ul class="fields__achievements achievements-list">
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="selfie-shark" name="selfie-shark" type="checkbox" checked>
-                    <label class="achievements-list__label" for="selfie-shark">Сделал селфи с акулой</label>
-                  </li>
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="sunburn" name="sunburn" type="checkbox" checked>
-                    <label class="achievements-list__label" for="sunburn">Обгорел на пляже</label>
-                  </li>
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="chuck" name="chuck" type="checkbox">
-                    <label class="achievements-list__label" for="chuck">Видел Чака Норриса</label>
-                  </li>
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="souvenirs" name="souvenirs" type="checkbox">
-                    <label class="achievements-list__label" for="souvenirs">Накупил сувениров</label>
-                  </li>
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="tower" name="tower" type="checkbox" checked>
-                    <label class="achievements-list__label" for="tower">Удержал башню</label>
-                  </li>
-                  <li class="achievements-list__item">
-                    <input class="achievements-list__input" id="break-hotel" name="break-hotel" type="checkbox">
-                    <label class="achievements-list__label" for="break-hotel">Разгромил отель</label>
-                  </li>
-                </ul>
-              </div>
+          <div class="fields__set fields__set--checkboxes fields__set--grey">
+            <h2 class="fields__title">Ваши безбашенные достижения в путешествии</h2>
+            <ul class="fields__achievements achievements-list">
+              <li class="achievements-list__item">
+                <input class="achievements-list__input" id="selfie-shark" name="selfie-shark" type="checkbox" checked>
+                <label class="achievements-list__label" for="selfie-shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements-list__item">
+                <input class="achievements-list__input" id="sunburn" name="sunburn" type="checkbox" checked>
+                <label class="achievements-list__label" for="sunburn">Обгорел на пляже</label>
+              </li>
+              <li class="achievements-list__item">
+                <input class="achievements-list__input" id="chuck" name="chuck" type="checkbox">
+                <label class="achievements-list__label" for="chuck">Видел Чака Норриса</label>
+              </li>
+              <li class="achievements-list__item">
+                <input class="achievements-list__input" id="souvenirs" name="souvenirs" type="checkbox">
+                <label class="achievements-list__label" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="achievements-list__item">
+                <input class="achievements-list__input" id="tower" name="tower" type="checkbox" checked>
+                <label class="achievements-list__label" for="tower">Удержал башню</label>
+              </li>
+              <li class="achievements-list__item achievements-list__item--last-child">
+                <input class="achievements-list__input" id="break-hotel" name="break-hotel" type="checkbox">
+                <label class="achievements-list__label" for="break-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+          <div class="fields__set fields__set--contacts">
+            <h2 class="fields__title">Контактная информация</h2>
+            <div class="fields__contact-block">
+              <label class="fields__label" for="phone">Номер телефона</label>
+              <input class="fields__textfield" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="fields__contact-block">
+              <label class="fields__label" for="mail-adress">Адрес почты</label>
+              <input class="fields__textfield" id="mail-adress" name="mail-adress" type="text" placeholder="Введите почту *">
             </div>
           </div>
-          <div class="fields__wrapper fields__box fields__contacts">
-            <div class="container">
-              <div class="fields__set">
-                <h2 class="fields__title">Контактная информация</h2>
-                <div class="fields__contact-block">
-                  <label class="fields__label" for="phone">Номер телефона</label>
-                  <input class="fields__textfield" id="phone" name="phone" type="text" value="Номер, пожалуйста">
-                </div>
-                <div class="fields__contact-block">
-                  <label class="fields__label" for="mail-adress">Адрес почты</label>
-                  <input class="fields__textfield" id="mail-adress" name="mail-adress" type="text" value="Введите почту *">
-                </div>
-              </div>
-            </div>
+          <div class="fields__set fields__set--radio fields__set--grey">
+            <h2 class="fields__title">С каким приложением путешествовали?</h2>
+            <ul class="app-list">
+              <li class="app-list__item">
+                <input class="app-list__input" id="iOs" name="application" type="radio" value="iOs" checked>
+                <label class="app-list__label" for="iOs">Pink для iOS</label>
+              </li>
+              <li class="app-list__item">
+                <input class="app-list__input" id="android" name="application" type="radio" value="android">
+                <label class="app-list__label" for="android">Pink на Android</label>
+              </li>
+              <li class="app-list__item">
+                <input class="app-list__input" id="win-phone" name="application" type="radio" value="windows-phone">
+                <label class="app-list__label" for="win-phone">Windows Phone</label>
+              </li>
+            </ul>
           </div>
-          <div class="fields__wrapper fields__wrapper--grey fields__box fields__radio">
-            <div class="container">
-              <div class="fields__set">
-                <h2 class="fields__title">С каким приложением путешествовали?</h2>
-                <ul class="app-list">
-                  <li class="app-list__item">
-                    <input class="app-list__input" id="iOs" name="application" type="radio" value="iOs" checked>
-                    <label class="app-list__label" for="iOs">Pink для iOs</label>
-                  </li>
-                  <li class="app-list__item">
-                    <input class="app-list__input" id="android" name="application" type="radio" value="android">
-                    <label class="app-list__label" for="android">Pink для Android</label>
-                  </li>
-                  <li class="app-list__item">
-                    <input class="app-list__input" id="win-phone" name="application" type="radio" value="windows-phone">
-                    <label class="app-list__label" for="win-phone">Windows Phone</label>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="fields__set fields__set--description">
+            <h2 class="fields__title">Опишите свои эмоции</h2>
+            <textarea class="fields__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
-          <div class="fields__wrapper fields__box fields__description">
-            <div class="container">
-              <div class="fields__set">
-                <h2 class="fields__title">Опишите свои эмоции</h2>
-                <textarea class="fields__textarea" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
-              </div>
-            </div>
-          </div>
-          <div class="fields__wrapper fields__send-form">
-            <div class="container">
-              <div class="fields__button-block">
-                <button class="fields__button square-button" type="submit">Отправить форму</button>
-                <p class="fields__note"><span class="fields__note-star">*</span> — обязательные<span class="fields__note-plus"> для заполнения</span> поля</p>
-              </div>
-            </div>
+          <div class="fields__button-block">
+            <button class="fields__button square-button" type="submit">Отправить форму</button>
+            <p class="fields__note"><span class="fields__note-star">*</span> — обязательные<span class="fields__note-plus"> для заполнения</span>              поля</p>
           </div>
         </form>
-        <div>
+      </div>
     </section>
 
   </main>
 
-  <footer class="page-footer page-footer-index">
+  <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
         <div class="page-footer__block page-footer__logo">
@@ -202,8 +214,8 @@
         </div>
         <div class="page-footer__block page-footer__social">
           <ul class="page-footer__list social-list">
-            <a class="social-list__link" href="#">
-              <li class="social-list__item" tabindex="0">
+            <li class="social-list__item" tabindex="0">
+              <a class="social-list__link" href="#">
                 <svg class="social-list__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
                   xml:space="preserve">
@@ -214,33 +226,33 @@
                     </g>
                   </g>
                 </svg>
-              </li>
-            </a>
-            <a class="social-list__link" href="#">
-              <li class="social-list__item" tabindex="0">
+              </a>
+            </li>
+            <li class="social-list__item" tabindex="0">
+              <a class="social-list__link" href="#">
                 <svg class="social-list__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
                   xml:space="preserve">
                   <path class="social-list__icon-path" fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"
                   />
                 </svg>
-              </li>
-            </a>
-            <a class="social-list__link" href="#">
-              <li class="social-list__item" tabindex="0">
+              </a>
+            </li>
+            <li class="social-list__item" tabindex="0">
+              <a class="social-list__link" href="#">
                 <svg class="social-list__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
                   xml:space="preserve">
                   <path class="social-list__icon-path" fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"
                   />
                 </svg>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__block page-footer__copyright">
           <span class="page-footer__developed">Разработано</span>
-          <a class="page-footer__link" href="#" tabindex="0">
+          <a class="page-footer__academy-link" href="#" tabindex="0">
             <svg class="page-footer__academy-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
               xml:space="preserve">

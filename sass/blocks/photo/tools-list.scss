@@ -1,11 +1,14 @@
 .tools-list {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 71.43%;
 
   @include list-unstyle;
+
+  margin-left: 37px;
   margin-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .tools-list__item {
@@ -33,6 +36,8 @@
 @media (min-width: $tablet-width) {
   .tools-list {
     flex-direction: column;
+    align-items: stretch;
+    width: 100%;
     margin: 0;
   }
 
@@ -40,13 +45,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 70px;
+    padding-top: 22px;
+    padding-bottom: 24px;
     border-bottom: $setborder;
   }
 
-  .tools-list__icon {
-    width: 22px;
-    height: 22px;
+  .tools-list__icon--clip {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tools-list__icon--fill {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tools-list__icon--contrast {
+    width: 18px;
+    height: 18px;
   }
 
   .tools-list__icon-path {
@@ -59,8 +75,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .tools-list__icon {
-    width: 44px;
-    height: 44px;
+  .tools-list__item {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+
+  .tools-list__icon--clip {
+    width: 46px;
+    height: 46px;
+  }
+
+  .tools-list__icon--fill {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tools-list__icon--contrast {
+    width: 33px;
+    height: 33px;
   }
 }

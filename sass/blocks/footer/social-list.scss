@@ -5,11 +5,11 @@
   @include list-unstyle;
 }
 
-.social-list__link {
+.social-list__item {
   display: block;
 }
 
-.social-list__item {
+.social-list__link {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -33,7 +33,7 @@
   }
 }
 
-.social-list__link:nth-child(2) {
+.social-list__item:nth-child(2) {
   padding-left: 12px;
   padding-right: 12px;
 }

@@ -1,7 +1,6 @@
 .mainpage-footer {
   position: relative;
   text-align: center;
-  padding-top: 46px;
 }
 
 .mainpage-footer__wrapper {
@@ -11,7 +10,8 @@
 
 .mainpage-footer__title {
   line-height: $line-auto;
-  padding-bottom: 38px;
+  padding-top: 48px;
+  padding-bottom: 33px;
   margin: 0;
 
   @include big-ttl-style;
@@ -50,11 +50,15 @@
     font-size: 40px;
     width: 370px;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   .mainpage-footer__map {
+    min-height: 375px;
     background-image: url("../img/bg-map-tablet.png");
-    background-position: 100% 60%;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .mainpage-footer__mask {
@@ -64,15 +68,18 @@
 
 @media (min-width: $desktop-width) {
   .mainpage-footer {
-    min-height: 870px;
+    margin-bottom: 60px;
   }
 
   .mainpage-footer__title {
-    padding-bottom: 65px;
+    font-size: 50px;
+    width: 470px;
+    padding-top: 63px;
+    padding-bottom: 55px;
   }
 
   .mainpage-footer__map {
-    min-height: 500px;
+    min-height: 510px;
     background-image: url("../img/bg-map-desktop.png");
     background-position: 100% 60%;
   }
