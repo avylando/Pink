@@ -133,7 +133,11 @@
   }
 
   .set-selector__body {
+<<<<<<< HEAD
     display: block;
+=======
+    justify-content: center;
+>>>>>>> d04f3c2779523f0a641a2c030d1bf989b7bd2174
     min-height: 45px;
   }
 
@@ -179,8 +183,9 @@
     display: block;
 
     & .set-selector__body {
-      border-right: none;
+      justify-content: flex-start;
       padding-left: 15px;
+      border-right: none;
     }
 
     & .set-selector__body:first-child {
