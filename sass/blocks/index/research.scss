@@ -121,4 +121,23 @@
     font-size: 18px;
     line-height: $maxline-h;
   }
+
+  .research__title {
+    margin-top: 72px;
+    margin-bottom: 22px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .research__text {
+    margin-bottom: 31px;
+  }
+
+  .research__text,
+  .research__link {
+    font-size: 18px;
+    line-height: $maxline-h;
+  }
 }
