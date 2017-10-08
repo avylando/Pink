@@ -14,8 +14,6 @@
 
 .main-menu__item {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 19px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
   cursor: pointer;
@@ -33,11 +31,14 @@
 }
 
 .main-menu__link {
+  display: inline-block;
   color: #ffffff;
   line-height: 1.2em;
   text-transform: uppercase;
   vertical-align: middle;
-
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 22px;
 
   @include ttl-style;
 }
@@ -51,8 +52,6 @@
   }
 
   .main-menu__item {
-    padding-top: 40px;
-    padding-bottom: 45px;
     margin-left: 0;
     margin-right: 0;
     border: none;
@@ -61,5 +60,7 @@
   .main-menu__link {
     font-weight: 400;
     text-transform: none;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
