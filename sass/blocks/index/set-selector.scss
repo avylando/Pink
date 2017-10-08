@@ -133,7 +133,7 @@
   }
 
   .set-selector__body {
-    display: block;
+    justify-content: center;
     min-height: 45px;
   }
 
@@ -179,8 +179,9 @@
     display: block;
 
     & .set-selector__body {
-      border-right: none;
+      justify-content: flex-start;
       padding-left: 15px;
+      border-right: none;
     }
 
     & .set-selector__body:first-child {
