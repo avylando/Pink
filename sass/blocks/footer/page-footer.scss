@@ -4,7 +4,7 @@
   padding-bottom: 40px;
 }
 
-.page-footer-index {
+.page-footer--index {
   display: none;
 }
 
@@ -83,7 +83,7 @@
     padding-bottom: 0;
   }
 
-  .page-footer-index {
+  .page-footer--index {
     display: block;
   }
 
@@ -126,6 +126,10 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 19px;
+  }
+
+  .page-footer--index {
+    padding-top: 9px;
   }
 
   .page-footer__wrapper {

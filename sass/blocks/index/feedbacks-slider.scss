@@ -66,18 +66,25 @@
     padding-bottom: 82px;
   }
 
-  .feedback-slider__quotes-image {
+  .feedbacks-slider__quotes-image {
     display: block;
     margin: 0 auto;
   }
 
-  .feedback-slider__wrapper {
+  .feedbacks-slider__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
   .feedbacks-slider__arrow {
     display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .feedbacks-slider__arrow-icon {
+    margin-bottom: 70px;
   }
 
   .feedbacks-slider__item {
