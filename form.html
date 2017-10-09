@@ -218,14 +218,14 @@
             <h2 class="fields__title">Контактная информация</h2>
             <div class="fields__contact-block">
               <label class="fields__label" for="phone">Номер телефона</label>
-              <input class="fields__textfield" id="phone" name="phone" type="text" placeholder="Номер, пожалуйста">
+              <input class="fields__textfield" id="phone" name="phone" type="tel" placeholder="Номер, пожалуйста">
               <div class="fields__contact-image">
                 <img class="fields__contact-icon fields__contact-icon--phone" src="img/icon-phone.svg">
               </div>
             </div>
             <div class="fields__contact-block">
               <label class="fields__label" for="mail-adress">Адрес почты</label>
-              <input class="fields__textfield" id="mail-adress" name="mail-adress" type="text" placeholder="Введите почту *">
+              <input class="fields__textfield" id="mail-adress" name="mail-adress" type="email" placeholder="Введите почту *">
               <div class="fields__contact-image">
                 <img class="fields__contact-icon fields__contact-icon--mail" src="img/icon-mail.svg">
               </div>
@@ -254,7 +254,9 @@
           </div>
           <div class="fields__button-block">
             <button class="fields__button square-button" type="submit">Отправить форму</button>
-            <p class="fields__note"><span class="fields__note-star">*</span> — обязательные<span class="fields__note-plus"> для заполнения</span>              поля</p>
+            <p class="fields__note">
+              <span class="fields__note-star">*</span> — обязательные<span class="fields__note-plus"> для заполнения</span> поля
+            </p>
           </div>
         </form>
       </div>
@@ -265,7 +267,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
-        <div class="page-footer__block page-footer__logo">
+        <div class="page-footer__block page-footer__logo" tabindex="0">
           <svg class="page-footer__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
             xml:space="preserve">
@@ -286,7 +288,8 @@
         </div>
         <div class="page-footer__block page-footer__social">
           <ul class="page-footer__list social-list">
-            <li class="social-list__item" tabindex="0">
+            <li class="social-list__item">
+              <h3 class="visually-hidden">Twitter</h3>
               <a class="social-list__link" href="#">
                 <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
@@ -299,7 +302,8 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item" tabindex="0">
+            <li class="social-list__item">
+              <h3 class="visually-hidden">Facebook</h3>
               <a class="social-list__link" href="#">
                 <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
@@ -308,9 +312,9 @@
                 </svg>
               </a>
             </li>
-            <li class="social-list__item" tabindex="0">
+            <li class="social-list__item">
+              <h3 class="visually-hidden">YouTube</h3>
               <a class="social-list__link" href="#">
-
                 <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                   <path class="social-list__icon-path" fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"
@@ -322,6 +326,7 @@
         </div>
         <div class="page-footer__block page-footer__copyright">
           <span class="page-footer__developed">Разработано</span>
+          <h3 class="visually-hidden">HTML Academy</h3>
           <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" tabindex="0">
             <svg class="page-footer__academy-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"

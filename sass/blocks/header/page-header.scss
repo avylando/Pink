@@ -13,8 +13,19 @@
   @include lr-padding-reset;
 }
 
+.page-header__title--transparent {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 100%;
+  border: none;
+  background-color: $black-op;
+  z-index: 100;
+}
+
 .page-header__logo {
   padding-left: 20px;
+  outline: none;
 
   &:hover .page-header__logo-icon-path,
   &:focus .page-header__logo-icon-path {
@@ -120,9 +131,15 @@
   }
 
   .page-header__title {
-    width: 150px;
+    width: 15.96%;
     padding: 0;
     border: none;
+  }
+
+  .page-header__title--transparent {
+    position: static;
+    background-color: transparent;
+    width: 15.96%;
   }
 
   .page-header__logo {
@@ -142,6 +159,6 @@
   }
 
   .page-header__main-nav {
-    width: 620px;
+    width: 65.96%;
   }
 }

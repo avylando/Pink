@@ -26,6 +26,7 @@
 }
 
 .page-footer__logo {
+  outline: none;
   cursor: pointer;
 
   &:hover .page-footer__icon-path,
@@ -47,8 +48,8 @@
 }
 
 .page-footer__social {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 39px;
+  margin-bottom: 39px;
 }
 
 .page-footer__copyright {

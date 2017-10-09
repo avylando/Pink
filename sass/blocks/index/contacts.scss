@@ -57,6 +57,11 @@
   .contacts__block--adress {
     align-self: center;
 
+    .contacts__title {
+      padding-top: 6px;
+      padding-bottom: 8px;
+    }
+
     .contacts__text {
       margin-bottom: 32px;
     }

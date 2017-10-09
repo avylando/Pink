@@ -10,6 +10,11 @@
   }
 }
 
+.promo--extended {
+  padding-top: 67px;
+  background-position: 50% 0;
+}
+
 .promo__poster {
   position: relative;
   min-height: 395px;
@@ -73,6 +78,10 @@
     }
   }
 
+  .promo--extended {
+    padding-top: 110px;
+  }
+
   .promo__wrapper {
     position: relative;
     display: flex;
@@ -96,7 +105,7 @@
   .promo__links {
     order: 1;
     padding-top: 92px;
-    margin-bottom: 100px;
+    margin-bottom: 98px;
     z-index: 10;
   }
 
