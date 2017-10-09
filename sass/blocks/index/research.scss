@@ -42,7 +42,7 @@
     min-width: 238px;
     width: 38.39%;
     height: 281px;
-    background-image: url(../img/icon-timer.svg);
+    background-image: url("../img/icon-timer.svg");
     background-size: 238px auto;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -101,25 +101,6 @@
 
   .research__effect {
     width: 61.06%;
-  }
-
-  .research__title {
-    margin-top: 92px;
-    margin-bottom: 22px;
-
-    br {
-      display: none;
-    }
-  }
-
-  .research__text {
-    margin-bottom: 31px;
-  }
-
-  .research__text,
-  .research__link {
-    font-size: 18px;
-    line-height: $maxline-h;
   }
 
   .research__title {
