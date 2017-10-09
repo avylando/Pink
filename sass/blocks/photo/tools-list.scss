@@ -8,7 +8,7 @@
 
   margin-left: 37px;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .tools-list__item {
@@ -27,6 +27,11 @@
 
 .tools-list__icon-path {
   fill: $editoricon-fill;
+}
+
+.tools-list__icon--fill {
+  margin-top: 2px;
+  margin-right: 14px;
 }
 
 .tools-list__range {
@@ -51,18 +56,21 @@
   }
 
   .tools-list__icon--clip {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
   }
 
   .tools-list__icon--fill {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    margin-left: 3px;
   }
 
   .tools-list__icon--contrast {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
   }
 
   .tools-list__icon-path {
