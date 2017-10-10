@@ -116,7 +116,6 @@
   .advantages__illustration {
     align-self: flex-start;
     order: 1;
-    width: 270px;
   }
 
   .advantages__image {
@@ -178,28 +177,12 @@
     width: 100%;
   }
 
-  .advantages__illustration {
-    width: 33.33%;
-
-    &:first-child .advantages__image {
-      margin-right: 30px;
-    }
-
-    &:nth-child(2) .advantages__image {
-      margin-left: 12px;
-    }
-
-    &:last-child .advantages__image {
-      margin-left: 24px;
-    }
-  }
-
   .advantages__illustration--hide {
     display: block;
   }
 
   .advantages__image {
-    width: 292px;
+    width: 286px;
     height: auto;
     margin: 0 auto;
   }

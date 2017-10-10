@@ -23,6 +23,13 @@
   z-index: 100;
 }
 
+.page-header__title--nojs {
+  position: static;
+  width: auto;
+  border-bottom: 1px solid #000000;
+  background-color: inherit;
+}
+
 .page-header__logo {
   padding-left: 20px;
   outline: none;
@@ -90,6 +97,10 @@
   .page-header__burger-icon {
     display: block;
   }
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

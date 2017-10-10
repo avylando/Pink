@@ -15,6 +15,11 @@
   background-position: 50% 0;
 }
 
+// .promo--nojs {
+//   padding-top: 0;
+//   background-position: 50% -35%;
+// }
+
 .promo__poster {
   position: relative;
   min-height: 395px;
@@ -82,6 +87,10 @@
     padding-top: 110px;
   }
 
+  // .promo--nojs {
+  //   padding-top: 0;
+  // }
+
   .promo__wrapper {
     position: relative;
     display: flex;
@@ -90,16 +99,13 @@
   .promo__poster {
     position: absolute;
     order: 2;
-    left: -20px;
+    left: 161px;
     bottom: 0;
   }
 
   .promo__image {
     position: static;
     display: block;
-    width: 700px;
-    max-width: none;
-    left: -320px;
   }
 
   .promo__links {
@@ -142,6 +148,10 @@
     }
   }
 
+  .promo--extended {
+    padding-top: 0;
+  }
+
   .promo__wrapper {
     min-height: 850px;
   }
@@ -167,10 +177,6 @@
   }
 
   .promo__poster {
-    left: 35px;
-  }
-
-  .promo__image {
-    width: 1050px;
+    left: 339px;
   }
 }
