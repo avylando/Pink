@@ -1,10 +1,26 @@
 .photo-block {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
-.best-photo-block {
+.photo-block--best {
   position: relative;
+}
+
+.photo-block__image-label {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.photo-block__label-text {
+  position: absolute;
+  top: 6px;
+  right: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .photo-block__image {
@@ -16,40 +32,14 @@
   display: flex;
   flex-direction: column;
   background-color: $grey-mod;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   padding-left: 17px;
   padding-right: 20px;
 }
 
-// .best-photo-block::before {
-//   position: absolute;
-//   content: "";
-//   display: block;
-
-//   width: 140px;
-//   height: 36px;
-//   left: 160px;
-//   top: 0;
-
-//   background-image: url("../img/image-label.png");
-// }
-
-// .best-photo-block::after {
-//   position: absolute;
-//   content: "Панорама дня";
-//   display: block;
-//   font-family: inherit;
-//   font-size: $minifont;
-//   font-weight: 700;
-//   color: #ffffff;
-//   text-transform: uppercase;
-//   left: 180px;
-//   top: 7px;
-// }
-
 .photo-block__username {
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .photo-block__post-time {
@@ -74,17 +64,6 @@
   padding-left: 20px;
 }
 
-// .photo-block__likes::before {
-//   position: absolute;
-//   content: "";
-//   display: block;
-//   width: 13px;
-//   height: 12px;
-//   left: 0;
-//   bottom: 7px;
-//   background-image: url("../img/icon-heart.svg");
-// }
-
 @media (min-width: $tablet-width) {
   .photo-wrapper {
     display: flex;
@@ -94,7 +73,6 @@
 
   .photo-block {
     flex-basis: calc(50% - 20px);
-    min-height: 455px;
     margin-right: 20px;
   }
 
@@ -103,17 +81,17 @@
     padding-right: 32px;
   }
 
-  // Временно, для выравнивания
-
-  .photo-block__image {
-    height: 300px;
-  }
-
   .photo-block__image--best {
-    height: 509px;
+    min-height: 509px;
   }
 
-  //
+  .photo-block__image-label {
+    top: 57px;
+  }
+
+  .photo-block__label-text {
+    top: 63px;
+  }
 
   .photo-block__username {
     padding-top: 25px;
@@ -137,7 +115,7 @@
     order: 2;
   }
 
-  .best-photo-block {
+  .photo-block--best {
     width: 100%;
     margin-bottom: 50px;
 
@@ -148,7 +126,7 @@
       flex-wrap: wrap;
 
       padding-right: 28px;
-      padding-bottom: 26px;
+      padding-bottom: 23px;
       margin: 0 auto;
     }
 
@@ -172,22 +150,24 @@
 @media (min-width: $desktop-width) {
   .photo-block {
     flex-basis: calc(33.33% - 20px);
-    min-height: 555px;
     margin-bottom: 55px;
   }
 
-  // Временно, для выравнивания
-
-  .photo-block__image {
-    height: 400px;
-  }
-
   .photo-block__image--best {
-    height: 506px;
+    min-height: 506px;
   }
-  //
 
-  .best-photo-block {
+  .photo-block__image-label {
+    top: 55px;
+    right: 10px;
+  }
+
+  .photo-block__label-text {
+    top: 61px;
+    right: 30px;
+  }
+
+  .photo-block--best {
     margin-bottom: 49px;
 
     .photo-block__wrapper {

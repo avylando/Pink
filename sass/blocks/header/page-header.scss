@@ -1,7 +1,4 @@
 .page-header {
-  // display: flex;
-  // flex-direction: column;
-  min-width: 320px;
   background-color: $firmcolor;
   margin: 0 auto;
 }
@@ -16,8 +13,19 @@
   @include lr-padding-reset;
 }
 
+.page-header__title--transparent {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 100%;
+  border: none;
+  background-color: $black-op;
+  z-index: 100;
+}
+
 .page-header__logo {
   padding-left: 20px;
+  outline: none;
 
   &:hover .page-header__logo-icon-path,
   &:focus .page-header__logo-icon-path {
@@ -27,6 +35,11 @@
   &:active .page-header__logo-icon-path {
     fill: $pink-mod-op;
   }
+}
+
+.page-header__logo-icon--tablet,
+.page-header__logo-icon--desktop {
+  display: none;
 }
 
 .page-header__toggle {
@@ -49,32 +62,13 @@
 }
 
 .page-header__burger-icon {
-  position: absolute;
-  display: block;
-  right: 0;
-  top: 0;
-  width: 36px;
-  height: 4px;
-
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-}
-
-.page-header__burger {
-  position: relative;
-  width: 36px;
-  height: 25px;
-  cursor: pointer;
-
-  &:hover .page-header__burger-icon,
-  &:focus .page-header__burger-icon {
-    background-color: $pink-mod;
-    box-shadow: 0 8px 0 0 $pink-mod, 0 16px 0 0 $pink-mod;
+  &:hover .page-header__burger-icon-path,
+  &:focus .page-header__burger-icon-path {
+    fill: $pink-mod;
   }
 
-  &:active .page-header__burger-icon {
-    background-color: $pink-mod-op;
-    box-shadow: 0 8px 0 0 $pink-mod-op, 0 16px 0 0 $pink-mod-op;
+  &:active .page-header__burger-icon-path {
+    fill: $pink-mod-op;
   }
 }
 
@@ -83,7 +77,7 @@
     display: block;
   }
 
-  .page-header__burger {
+  .page-header__burger-icon {
     display: none;
   }
 }
@@ -93,15 +87,27 @@
     display: none;
   }
 
-  .page-header__burger {
+  .page-header__burger-icon {
     display: block;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__title {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 39px;
+  }
+
+  .page-header__logo-icon--mobile {
+    display: none;
+  }
+
+  .page-header__logo-icon--tablet {
+    display: block;
+  }
+
+  .page-header__toggle {
+    margin-top: 11px;
   }
 }
 
@@ -125,9 +131,27 @@
   }
 
   .page-header__title {
-    width: 150px;
+    width: 15.96%;
     padding: 0;
     border: none;
+  }
+
+  .page-header__title--transparent {
+    position: static;
+    background-color: transparent;
+    width: 15.96%;
+  }
+
+  .page-header__logo {
+    margin-bottom: 10px;
+  }
+
+  .page-header__logo-icon--tablet {
+    display: none;
+  }
+
+  .page-header__logo-icon--desktop {
+    display: block;
   }
 
   .page-header__toggle {
@@ -135,6 +159,6 @@
   }
 
   .page-header__main-nav {
-    width: 620px;
+    width: 65.96%;
   }
 }
