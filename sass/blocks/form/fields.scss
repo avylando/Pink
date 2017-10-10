@@ -67,6 +67,10 @@
   flex-direction: column;
 }
 
+.fields__contact-image {
+  display: none;
+}
+
 .fields__label {
   line-height: $maxline-h;
   padding-left: 22px;
@@ -111,6 +115,10 @@
   &:focus,
   &:active {
     border-color: $pink-mod;
+  }
+
+  &::placeholder {
+    color: $firmcolor;
   }
 }
 
@@ -195,6 +203,7 @@
   }
 
   .fields__contact-block {
+    position: relative;
     margin: 0;
     margin-top: 30px;
 
@@ -206,9 +215,33 @@
 
     .fields__textfield {
       order: 1;
+      width: calc(100% - 62px);
       margin-top: 0;
       margin-bottom: 10px;
     }
+  }
+
+  .fields__contact-image {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $lightgrey-mod;
+  }
+
+  .fields__contact-icon {
+    display: block;
+  }
+
+  .fields__contact-icon--phone {
+    margin: 20px auto;
+  }
+
+  .fields__contact-icon--mail {
+    margin: 24px auto;
   }
 
   .fields__set--radio {

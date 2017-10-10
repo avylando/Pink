@@ -30,6 +30,24 @@
   .range-control {
     width: 86.55%;
   }
+
+  .range-control--clip {
+    .range-control__toggle {
+      right: 60px;
+    }
+  }
+
+  .range-control--fill {
+    .range-control__toggle {
+      right: 181px;
+    }
+  }
+
+  .range-control--contrast {
+    .range-control__toggle {
+      right: 110px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
