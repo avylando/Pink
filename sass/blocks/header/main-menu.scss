@@ -44,7 +44,7 @@
   }
 
   &:active {
-    color: $pink-mod-op;
+    opacity: 0.3;
   }
 }
 
@@ -67,5 +67,27 @@
     text-transform: none;
     padding-top: 45px;
     padding-bottom: 45px;
+
+    &:hover,
+    &:focus {
+      color: $pink-mod;
+    }
+
+    &:active {
+      color: #ffffff;
+    }
+  }
+
+  .main-menu__link--active {
+    background-image: linear-gradient(to bottom, transparent 77px, #ffffff 77px,#ffffff 78px, transparent 78px);
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }

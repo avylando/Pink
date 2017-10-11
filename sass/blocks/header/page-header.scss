@@ -40,7 +40,8 @@
   }
 
   &:active .page-header__logo-icon-path {
-    fill: $pink-mod-op;
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
 
