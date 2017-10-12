@@ -24,13 +24,13 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    margin-top: 40px;
-    margin-bottom: 9px;
+    margin-top: 44px;
+    margin-bottom: 13px;
   }
 
   .research__text {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .research__wrapper {
@@ -76,8 +76,8 @@
 
 @media (min-width: $desktop-width) {
   .research {
-    padding-top: 25px;
-    padding-bottom: 65px;
+    padding-top: 30px;
+    padding-bottom: 70px;
     background-color: $grey-mod;
   }
 
@@ -104,7 +104,7 @@
   }
 
   .research__title {
-    margin-top: 72px;
+    margin-top: 93px;
     margin-bottom: 22px;
 
     br {
