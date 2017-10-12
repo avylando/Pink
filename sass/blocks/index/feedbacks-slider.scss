@@ -1,6 +1,7 @@
 .feedbacks-slider {
   position: relative;
   text-align: center;
+  padding-top: 43px;
   padding-bottom: 40px;
 }
 
@@ -15,6 +16,14 @@
 .feedbacks-slider__item {
   display: flex;
   flex-direction: column;
+}
+
+.feedbacks-slider__item--hide {
+  display: none;
+}
+
+.feedbacks-slider__item--show {
+  display: flex;
 }
 
 .feedbacks-slider__title {
@@ -66,7 +75,7 @@
 @media (min-width: $desktop-width) {
   .feedbacks-slider {
     padding-top: 72px;
-    padding-bottom: 82px;
+    padding-bottom: 17px;
   }
 
   .feedbacks-slider__quotes-image {
