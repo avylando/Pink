@@ -122,6 +122,10 @@
   }
 }
 
+.fields__textfield--required {
+  border-color: red;
+}
+
 .fields__button-block {
   margin-bottom: 5px;
 }

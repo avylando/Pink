@@ -47,6 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .feedbacks-slider {
+    padding-top: 0;
     padding-bottom: 20px;
   }
 
@@ -75,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .feedbacks-slider {
     padding-top: 72px;
-    padding-bottom: 17px;
+    padding-bottom: 11px;
   }
 
   .feedbacks-slider__quotes-image {
@@ -115,7 +116,8 @@
 
   .feedbacks-slider__text {
     width: 690px;
-    padding-top: 52px;
+    padding-top: 49px;
+    padding-bottom: 35px;
   }
 
   .feedback-slider__quote {

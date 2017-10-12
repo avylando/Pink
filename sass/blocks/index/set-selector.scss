@@ -14,8 +14,100 @@
   transform: translateX(-280px);
 }
 
-.set-selector__wrapper .container {
-  padding: 0;
+@keyframes first-to-second {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-280px);
+  }
+}
+
+@keyframes first-to-third {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-560px);
+  }
+}
+
+@keyframes second-to-first {
+  0% {
+    transform: translateX(-280px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes second-to-third {
+  0% {
+    transform: translateX(-280px);
+  }
+
+  100% {
+    transform: translateX(-560px);
+  }
+}
+
+@keyframes third-to-first {
+  0% {
+    transform: translateX(-560px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes third-to-second {
+  0% {
+    transform: translateX(-560px);
+  }
+
+  100% {
+    transform: translateX(-280px);
+  }
+}
+
+.set-selector__wrapper--first-to-second {
+  transform: translateX(-280px);
+  animation-name: first-to-second;
+  animation-duration: 0.5s;
+}
+
+.set-selector__wrapper--first-to-third {
+  transform: translateX(-560px);
+  animation-name: first-to-third;
+  animation-duration: 0.5s;
+}
+
+.set-selector__wrapper--second-to-first {
+  transform: translateX(0);
+  animation-name: second-to-first;
+  animation-duration: 0.5s;
+}
+
+.set-selector__wrapper--second-to-third {
+  transform: translateX(-560px);
+  animation-name: second-to-third;
+  animation-duration: 0.5s;
+}
+
+.set-selector__wrapper--third-to-first {
+  transform: translateX(0);
+  animation-name: third-to-first;
+  animation-duration: 0.5s;
+}
+
+.set-selector__wrapper--third-to-second {
+  transform: translateX(-280px);
+  animation-name: third-to-second;
+  animation-duration: 0.5s;
 }
 
 .set-selector__set {
@@ -106,7 +198,7 @@
 @media (min-width: $tablet-width) {
   .set-selector {
     padding-top: 50px;
-    padding-bottom: 33px;
+    padding-bottom: 29px;
   }
 
   .set-selector__set {
@@ -127,7 +219,7 @@
   .set-selector__body {
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 47px;
   }
 
   .set-selector__option {
@@ -200,7 +292,7 @@
   }
 
   .set-selector__wrapper {
-    padding-top: 94px;
+    padding-top: 95px;
   }
 
   .set-selector__title {

@@ -19,10 +19,24 @@
 
 .mainpage-footer__map {
   position: relative;
-  width: 100%;
+  width: 320px;
   min-height: 200px;
+  margin: 0 auto;
   background-image: url("../img/bg-map-mobile.png");
-  background-position: bottom;
+  background-position: 100% 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+.mainpage-footer__marker {
+  position: absolute;
+  top: 93px;
+  left: 141px;
 }
 
 .mainpage-footer__mask {
@@ -50,15 +64,27 @@
     font-size: 40px;
     width: 370px;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 46px;
   }
 
   .mainpage-footer__map {
+    width: 660px;
     min-height: 375px;
-    background-image: url("../img/bg-map-tablet.png");
-    background-position: 100% 100%;
-    background-size: cover;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: 100% 73%;
+    background-size: 100%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 660px auto;
+    }
+  }
+
+  .mainpage-footer__marker {
+    top: 194px;
+    left: 312px;
   }
 
   .mainpage-footer__mask {
@@ -79,8 +105,20 @@
   }
 
   .mainpage-footer__map {
+    width: 960px;
     min-height: 510px;
-    background-image: url("../img/bg-map-desktop.png");
-    background-position: 100% 60%;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: 51% 58%;
+    background-size: 124%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1488px auto;
+    }
+  }
+
+  .mainpage-footer__marker {
+    top: 271px;
+    left: 460px;
   }
 }

@@ -59,9 +59,6 @@
       <div class="page-header__wrapper">
         <div class="page-header__title page-header__title--transparent page-header__title--nojs">
           <a class="page-header__logo" href="index.html">
-            <!-- <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="74" height="23">
-              <use xlink:href="img/sprite.svg#logo-mobile"></use>
-            </svg> -->
             <svg class="page-header__logo-icon page-header__logo-icon--mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
               xml:space="preserve">
@@ -76,9 +73,6 @@
                 />
               </g>
             </svg>
-            <!-- <svg class="page-header__logo-icon page-header__logo-icon--tablet" width="146" height="40">
-              <use xlink:href="img/sprite.svg#logo-tablet"></use>
-            </svg> -->
             <svg class="page-header__logo-icon page-header__logo-icon--tablet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
               xml:space="preserve">
@@ -96,9 +90,6 @@
               <path class="page-header__logo-icon-path" fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"
               />
             </svg>
-            <!-- <svg class="page-header__logo-icon page-header__logo-icon--desktop" width="146" height="40">
-              <use xlink:href="img/sprite.svg#logo-desktop"></use>
-            </svg> -->
             <svg class="page-header__logo-icon page-header__logo-icon--desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
               xml:space="preserve">
@@ -188,6 +179,10 @@
         <div class="promo__wrapper">
           <div class="promo__poster">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
               <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Рекламный постер">
@@ -259,13 +254,23 @@
           </div>
           <div class="advantages__images-list">
             <div class="advantages__illustration advantages__illustration--hide">
-              <img class="advantages__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Screen-good">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <img class="advantages__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Screen-good">
+              </picture>
             </div>
             <div class="advantages__illustration advantages__illustration--hide">
-              <img class="advantages__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Screen-better">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <img class="advantages__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Screen-better">
+              </picture>
             </div>
             <div class="advantages__illustration">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
                 <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Screen-best">
@@ -296,7 +301,7 @@
       <div class="container">
         <img class="feedbacks-slider__quotes-image" src="img/icon-quotes.svg" alt="quotes">
         <div class="feedbacks-slider__wrapper">
-          <button class="feedbacks-slider__arrow" type="button">
+          <button class="feedbacks-slider__arrow feedbacks-slider__arrow--left" type="button">
             <svg class="feedbacks-slider__arrow-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path class="feedbacks-slider__arrow-icon-path" fill="#bec2c7" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
             </svg>
@@ -325,7 +330,7 @@
               <span class="feedbacks-slider__quote">»</span>
             </p>
           </div>
-          <button class="feedbacks-slider__arrow" type="button">
+          <button class="feedbacks-slider__arrow feedbacks-slider__arrow--right" type="button">
             <svg class="feedbacks-slider__arrow-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path class="feedbacks-slider__arrow-icon-path" fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
             </svg>
@@ -360,15 +365,15 @@
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Розовый фильтр</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Смайлики</span>
-              <img class="set-selector__check-cross" src="img/icon-no.svg" alt="No">
+              <img class="set-selector__check-cross" src="img/icon-no.svg" width="26" height="26" alt="No">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Комментарии</span>
-              <img class="set-selector__check-cross" src="img/icon-no.svg" alt="No">
+              <img class="set-selector__check-cross" src="img/icon-no.svg" width="26" height="26" alt="No">
             </div>
           </div>
           <div class="set-selector__set set-selector__set--hit">
@@ -383,15 +388,15 @@
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Розовый фильтр</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Смайлики</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Комментарии</span>
-              <img class="set-selector__check-cross" src="img/icon-no.svg" alt="No">
+              <img class="set-selector__check-cross" src="img/icon-no.svg" width="26" height="26" alt="No">
             </div>
           </div>
           <div class="set-selector__set set-selector__set">
@@ -401,22 +406,22 @@
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Розовый фильтр</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Смайлики</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
             <div class="set-selector__body">
               <span class="set-selector__option">Комментарии</span>
-              <img class="set-selector__check-cross" src="img/icon-yes.svg" alt="Yes">
+              <img class="set-selector__check-cross" src="img/icon-yes.svg" width="31" height="22" alt="Yes">
             </div>
           </div>
         </div>
         <ul class="set-selector__nav nav-list">
-          <li class="nav-list__item" tabindex="0"></li>
-          <li class="nav-list__item nav-list__item--active" tabindex="0"></li>
-          <li class="nav-list__item" tabindex="0"></li>
+          <li class="nav-list__item nav-list__item--left" tabindex="0"></li>
+          <li class="nav-list__item nav-list__item--center nav-list__item--active" tabindex="0"></li>
+          <li class="nav-list__item nav-list__item--right" tabindex="0"></li>
         </ul>
       </div>
     </section>
@@ -448,7 +453,7 @@
       </div>
     </div>
     <div class="mainpage-footer__map">
-      <!-- <img class="mainpage-footer__mask" src="img/triangle-white-footer-mobile.svg"> -->
+      <img class="mainpage-footer__marker" src="img/icon-map-marker.svg" width="36" height="36" alt="marker">
     </div>
   </footer>
 
@@ -564,6 +569,7 @@
   <script>
     svg4everybody(); // run it now or whenever you are ready
   </script>
+  <script src="js/set-slider.js"></script>
 
 </body>
 

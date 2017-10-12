@@ -22,10 +22,6 @@
 }
 
 .contacts__block--adress {
-  .contacts__title {
-    padding-top: 10px;
-  }
-
   .contacts__text {
     margin-bottom: 40px;
   }
@@ -54,10 +50,6 @@
     flex-wrap: wrap;
   }
 
-  .contacts__title {
-    padding-bottom: 10px;
-  }
-
   .contacts__block {
     width: 50%;
   }
@@ -72,12 +64,12 @@
     align-self: center;
 
     .contacts__title {
-      padding-top: 6px;
+      padding-top: 9px;
       padding-bottom: 8px;
     }
 
     .contacts__text {
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
   }
 }
