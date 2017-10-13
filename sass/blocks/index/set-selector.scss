@@ -9,79 +9,19 @@
 
 .set-selector__wrapper {
   display: flex;
-  width: 840px;
+  width: 300%;
   padding-bottom: 40px;
-  transform: translateX(-280px);
-}
-
-@keyframes first-to-second {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-280px);
-  }
-}
-
-@keyframes first-to-third {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-560px);
-  }
-}
-
-@keyframes second-to-first {
-  0% {
-    transform: translateX(-280px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes second-to-third {
-  0% {
-    transform: translateX(-280px);
-  }
-
-  100% {
-    transform: translateX(-560px);
-  }
-}
-
-@keyframes third-to-first {
-  0% {
-    transform: translateX(-560px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes third-to-second {
-  0% {
-    transform: translateX(-560px);
-  }
-
-  100% {
-    transform: translateX(-280px);
-  }
+  transform: translateX(-33%);
 }
 
 .set-selector__wrapper--first-to-second {
-  transform: translateX(-280px);
+  transform: translateX(-33%);
   animation-name: first-to-second;
   animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--first-to-third {
-  transform: translateX(-560px);
+  transform: translateX(-66%);
   animation-name: first-to-third;
   animation-duration: 0.5s;
 }
@@ -93,7 +33,7 @@
 }
 
 .set-selector__wrapper--second-to-third {
-  transform: translateX(-560px);
+  transform: translateX(-66%);
   animation-name: second-to-third;
   animation-duration: 0.5s;
 }
@@ -105,7 +45,7 @@
 }
 
 .set-selector__wrapper--third-to-second {
-  transform: translateX(-280px);
+  transform: translateX(-33%);
   animation-name: third-to-second;
   animation-duration: 0.5s;
 }
@@ -113,7 +53,7 @@
 .set-selector__set {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 33%;
 }
 
 .set-selector__set--options {
