@@ -105,7 +105,7 @@ gulp.task("copy", function() {
     "css/normalize.css",
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**"
+    "js/polyfills/*.js"
   ], {
     base:"."
   })
