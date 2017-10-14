@@ -7,8 +7,12 @@
   mainMenu.classList.remove("main-menu--nojs");
   menuToggle.classList.remove("page-header__toggle--nojs");
   headerTitle.classList.remove("page-header__title--nojs");
-  // promo.classList.remove("promo--nojs");
-  // blockHead.classList.remove("block-head__wrapper--nojs");
+  if (promo) {
+    promo.classList.remove("promo--nojs");
+  }
+  if (blockHead) {
+    blockHead.classList.remove("block-head__wrapper--nojs");
+  }
 
 menuToggle.addEventListener("click", function() {
 
@@ -16,14 +20,22 @@ menuToggle.addEventListener("click", function() {
       mainMenu.classList.remove("main-menu--closed");
       mainMenu.classList.add("main-menu--opened");
       headerTitle.classList.remove("page-header__title--transparent");
-      promo.classList.remove("promo--extended");
-      // blockHead.classList.remove("block-head__wrapper--extended");
+      if (promo) {
+        promo.classList.remove("promo--extended");
+      }
+      if (blockHead) {
+        blockHead.classList.remove("block-head__wrapper--extended");
+      }
     } else {
       mainMenu.classList.add("main-menu--closed");
       mainMenu.classList.remove("main-menu--opened");
       headerTitle.classList.add("page-header__title--transparent");
-      promo.classList.add("promo--extended");
-      // blockHead.classList.add("block-head__wrapper--extended");
+      if (promo) {
+        promo.classList.add("promo--extended");
+      }
+      if (blockHead) {
+        blockHead.classList.add("block-head__wrapper--extended");
+      }
     }
 });
 
@@ -58,11 +70,3 @@ menuToggle.addEventListener ("click", function (evt) {
 //   }
 // });
 
-menuToggle.addEventListener ("click", function (evt) {
-
-  if (blockHead.classList.contains("block-head__wrapper--extended")) {
-    blockHead.classList.remove("block-head__wrapper--extended");
-  } else {
-    blockHead.classList.add("block-head__wrapper--extended");
-  }
-});

@@ -10,7 +10,7 @@
 
 .mainpage-footer__title {
   line-height: $line-auto;
-  padding-top: 48px;
+  padding-top: 43px;
   padding-bottom: 33px;
   margin: 0;
 
@@ -19,17 +19,17 @@
 
 .mainpage-footer__map {
   position: relative;
-  width: 320px;
+  width: 100%;
+  height: 100%;
   min-height: 200px;
   margin: 0 auto;
-  background-image: url("../img/bg-map-mobile.png");
+  background-image: url("../img/bg-map-mobile.jpg");
   background-position: 100% 100%;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
   }
 }
 
@@ -47,38 +47,21 @@
   top: -15px;
 }
 
-// .mainpage-footer__map::before {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 320px;
-//   height: 62px;
-//   left: 0;
-//   top: -15px;
-//   background-image: url("../img/triangle-white-footer-mobile.svg");
-//   z-index: 10;
-// }
-
 @media (min-width: $tablet-width) {
   .mainpage-footer__title {
     font-size: 40px;
     width: 370px;
     margin: 0 auto;
     padding-top: 45px;
-    padding-bottom: 46px;
+    padding-bottom: 44px;
   }
 
   .mainpage-footer__map {
-    width: 660px;
     min-height: 375px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: 100% 73%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-map-tablet.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 660px auto;
     }
   }
 
@@ -105,15 +88,11 @@
   }
 
   .mainpage-footer__map {
-    width: 960px;
     min-height: 510px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: 51% 58%;
-    background-size: 124%;
+    background-image: url("../img/bg-map-desktop.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 1488px auto;
     }
   }
 
