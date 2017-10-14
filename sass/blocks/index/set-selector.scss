@@ -1,10 +1,11 @@
 .set-selector {
   padding-top: 92px;
-  padding-bottom: 45px;
+  padding-bottom: 46px;
   background-color: $grey-mod;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+  overflow-x: hidden;
 }
 
 .set-selector__wrapper {
@@ -12,42 +13,31 @@
   width: 300%;
   padding-bottom: 40px;
   transform: translateX(-33%);
+  transition: transform 0.5s;
 }
 
 .set-selector__wrapper--first-to-second {
   transform: translateX(-33%);
-  animation-name: first-to-second;
-  animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--first-to-third {
   transform: translateX(-66%);
-  animation-name: first-to-third;
-  animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--second-to-first {
   transform: translateX(0);
-  animation-name: second-to-first;
-  animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--second-to-third {
   transform: translateX(-66%);
-  animation-name: second-to-third;
-  animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--third-to-first {
   transform: translateX(0);
-  animation-name: third-to-first;
-  animation-duration: 0.5s;
 }
 
 .set-selector__wrapper--third-to-second {
   transform: translateX(-33%);
-  animation-name: third-to-second;
-  animation-duration: 0.5s;
 }
 
 .set-selector__set {
@@ -145,14 +135,16 @@
     width: 25%;
     margin: 0;
 
-    &:first-child {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
+    &:nth-child(2) .set-selector__head {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-left-color: $firmcolor;
     }
 
-    &:nth-child(3) {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
+    &:last-child .set-selector__head {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-right-color: $firmcolor;
     }
   }
 

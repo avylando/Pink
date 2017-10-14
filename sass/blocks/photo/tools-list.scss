@@ -52,6 +52,11 @@
     padding-top: 22px;
     padding-bottom: 24px;
     border-bottom: $setborder;
+
+    &:hover .tools-list__icon-path,
+    &:focus .tools-list__icon-path {
+      fill: $pink-mod;
+    }
   }
 
   .tools-list__icon--clip {

@@ -227,7 +227,7 @@
           <div class="advantages__list">
             <div class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
             <div class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -438,10 +438,7 @@
         </div>
       </div>
     </div>
-    <div class="mainpage-footer__map">
-      <svg class="mainpage-footer__marker" width="36" height="36">
-        <use xlink:href="#icon-map-marker"></use>
-      </svg>
+    <div class="mainpage-footer__map" id="map">
     </div>
   </footer>
 
@@ -553,11 +550,29 @@
 
   <script src="js/polyfills/picturefill.min.js"></script>
   <script src="js/polyfills/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script>svg4everybody({polyfill: true}); // run it now or whenever you are ready</script>
   <script src="js/toggle.min.js"></script>
   <script src="js/feedbacks-slider-mobile.min.js"></script>
   <script src="js/feedbacks-slider-desktop.min.js"></script>
   <script src="js/set-slider.min.js"></script>
+  <script>
+          function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 16,
+              center: {lat: 59.936273, lng: 30.320952}
+            });
+
+            var image = "img/icon-map-marker.svg";
+            var beachMarker = new google.maps.Marker({
+              position: {lat: 59.936273, lng: 30.320952},
+              map: map,
+              icon: image
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ZvU65IhoUz5HyCwaxZ_W-Lkdx_OdYTM&callback=initMap">
+        </script>
 
 </body>
 

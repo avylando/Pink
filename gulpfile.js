@@ -55,17 +55,25 @@ gulp.task("jsminify", function() {
   return gulp.src("js/*.js")
   .pipe(jsmin())
   .pipe(rename({suffix: ".min"}))
-  .pipe(gulp.dest("build/js"));
+  .pipe(gulp.dest("js"));
 });
 
 gulp.task("clean-js", function() {
-  return del("build/js/*.min.js");
+  return del("js/*.min.js");
 })
+
+gulp.task("copy-js", function() {
+  return gulp.src("js/**/*.js",
+  { base: "."
+  })
+  .pipe(gulp.dest("build"))
+});
 
 gulp.task("js", function(done) {
   run(
     "clean-js",
     "jsminify",
+    "copy-js",
     done
   );
 })
@@ -105,7 +113,6 @@ gulp.task("copy", function() {
     "css/normalize.css",
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/polyfills/*.js"
   ], {
     base:"."
   })

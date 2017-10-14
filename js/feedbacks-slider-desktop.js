@@ -6,20 +6,18 @@ var leftArrow = fSliderD.querySelector(".feedbacks-slider__arrow--left");
 var rightArrow = fSliderD.querySelector(".feedbacks-slider__arrow--right");
 
 
-leftArrow.addEventListener("click", function (evt) {
+rightArrow.addEventListener("click", function (evt) {
   if (leftSlideD.classList.contains("feedbacks-slider__item--show")) {
     leftSlideD.classList.remove("feedbacks-slider__item--show");
     leftSlideD.classList.add("feedbacks-slider__item--hide");
     centerSlideD.classList.remove("feedbacks-slider__item--hide");
     centerSlideD.classList.add("feedbacks-slider__item--show");
-  }
-  if (centerSlideD.classList.contains("feedbacks-slider__item--show")) {
+  } else if (centerSlideD.classList.contains("feedbacks-slider__item--show")) {
     centerSlideD.classList.remove("feedbacks-slider__item--show");
     centerSlideD.classList.add("feedbacks-slider__item--hide");
     rightSlideD.classList.remove("feedbacks-slider__item--hide");
     rightSlideD.classList.add("feedbacks-slider__item--show");
-  }
-  if (rightSlideD.classList.contains("feedbacks-slider__item--show")) {
+  } else if (rightSlideD.classList.contains("feedbacks-slider__item--show")) {
     rightSlideD.classList.remove("feedbacks-slider__item--show");
     rightSlideD.classList.add("feedbacks-slider__item--hide");
     leftSlideD.classList.remove("feedbacks-slider__item--hide");
@@ -27,20 +25,18 @@ leftArrow.addEventListener("click", function (evt) {
   }
 })
 
-rightArrow.addEventListener("click", function (evt) {
+leftArrow.addEventListener("click", function (evt) {
   if (leftSlideD.classList.contains("feedbacks-slider__item--show")) {
     leftSlideD.classList.remove("feedbacks-slider__item--show");
     leftSlideD.classList.add("feedbacks-slider__item--hide");
     rightSlideD.classList.remove("feedbacks-slider__item--hide");
     rightSlideD.classList.add("feedbacks-slider__item--show");
-  }
-  if (centerSlideD.classList.contains("feedbacks-slider__item--show")) {
+  } else if (centerSlideD.classList.contains("feedbacks-slider__item--show")) {
     centerSlideD.classList.remove("feedbacks-slider__item--show");
     centerSlideD.classList.add("feedbacks-slider__item--hide");
     leftSlideD.classList.remove("feedbacks-slider__item--hide");
     leftSlideD.classList.add("feedbacks-slider__item--show");
-  }
-  if (rightSlideD.classList.contains("feedbacks-slider__item--show")) {
+  } else if (rightSlideD.classList.contains("feedbacks-slider__item--show")) {
     rightSlideD.classList.remove("feedbacks-slider__item--show");
     rightSlideD.classList.add("feedbacks-slider__item--hide");
     centerSlideD.classList.remove("feedbacks-slider__item--hide");
