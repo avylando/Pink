@@ -54,4 +54,22 @@
   .range-control__scale {
     width: 81%;
   }
+
+  .range-control--clip {
+    .range-control__toggle {
+      right: 236px;
+    }
+  }
+
+  .range-control--fill {
+    .range-control__toggle {
+      right: 60px;
+    }
+  }
+
+  .range-control--contrast {
+    .range-control__toggle {
+      right: 147px;
+    }
+  }
 }

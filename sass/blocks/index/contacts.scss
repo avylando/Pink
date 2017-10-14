@@ -76,19 +76,25 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+  }
+
+  .contacts__wrapper {
+    justify-content: space-between;
   }
 
   .contacts__block {
-    width: 33.33%;
+    width: 28.8%;
   }
 
   .contacts__block--phone {
     order: 1;
+    padding-right: 0;
   }
 
   .contacts__block--mail {
     order: 3;
+    padding-right: 0;
   }
 
   .contacts__block--adress {
@@ -97,6 +103,7 @@
 
     .contacts__title {
       padding-top: 0;
+      padding-bottom: 23px;
     }
 
     .contacts__text {

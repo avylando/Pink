@@ -31,6 +31,10 @@
   .research__text {
     margin-top: 0;
     margin-bottom: 12px;
+
+    br {
+      display: none;
+    }
   }
 
   .research__wrapper {
@@ -114,6 +118,10 @@
 
   .research__text {
     margin-bottom: 31px;
+
+    br {
+      display: inline;
+    }
   }
 
   .research__text,

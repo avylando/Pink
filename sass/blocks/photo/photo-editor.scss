@@ -114,13 +114,13 @@
 
   .photo-editor__form {
     padding-top: 38px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     background-color: $grey-mod;
   }
 
   .photo-editor__image-wrapper {
     width: 31.9%;
-    padding-top: 21px;
+    padding-top: 19px;
     margin-left: 80px;
   }
 
@@ -135,6 +135,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-left: 0;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;

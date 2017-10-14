@@ -18,12 +18,35 @@
   flex-direction: column;
 }
 
+@keyframes vision {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes invision {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .feedbacks-slider__item--hide {
   display: none;
+  animation-name: invision;
+  animation-duration: 1s;
 }
 
 .feedbacks-slider__item--show {
-  display: flex;
+  animation-name: vision;
+  animation-duration: 1s;
 }
 
 .feedbacks-slider__title {
