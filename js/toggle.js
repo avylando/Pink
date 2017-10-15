@@ -49,24 +49,4 @@ menuToggle.addEventListener ("click", function (evt) {
     menuToggle.classList.add("page-header__toggle--burger");
     menuToggle.classList.remove("page-header__toggle--cross");
   }
-
 });
-
-// menuToggle.addEventListener ("click", function (evt) {
-
-//   if (headerTitle.classList.contains("page-header__title--transparent")) {
-//     headerTitle.classList.remove("page-header__title--transparent");
-//   } else {
-//     headerTitle.classList.add("page-header__title--transparent");
-//   }
-// });
-
-// menuToggle.addEventListener ("click", function (evt) {
-
-//   if (promo.classList.contains("promo--extended")) {
-//     promo.classList.remove("promo--extended");
-//   } else {
-//     promo.classList.add("promo--extended");
-//   }
-// });
-
