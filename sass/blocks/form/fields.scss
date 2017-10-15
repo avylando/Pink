@@ -301,12 +301,12 @@
     align-items: center;
     margin-bottom: 49px;
 
-    & .fields__label {
+    .fields__label {
       padding-left: 0;
       padding-right: 19px;
     }
 
-    & .fields__textfield {
+    .fields__textfield {
       margin-bottom: 0;
     }
   }
@@ -352,6 +352,10 @@
   .fields__contact-block {
     width: 45.73%;
     margin-top: 27px;
+  }
+
+  .fields__contact-block--phone {
+    margin-right: 70px;
   }
 
   .fields__set--checkboxes {

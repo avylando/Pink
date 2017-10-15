@@ -1,6 +1,5 @@
 .social-list {
   display: flex;
-  // justify-content: space-around;
 
   @include list-unstyle;
 }
@@ -27,8 +26,7 @@
   &:active {
     @include social-border;
 
-    & .social-list__icon {
-      // fill: $pink-mod-op;
+    .social-list__icon {
       opacity: 0.3;
     }
   }

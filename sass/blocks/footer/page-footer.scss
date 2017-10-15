@@ -36,10 +36,10 @@
 
   &:active .page-footer__icon-path {
     fill: $pink-mod-op;
-  }
 
-  &:active .page-footer__icon-path--word {
-    fill: $firmcolor-op;
+    &--word {
+      fill: $firmcolor-op;
+    }
   }
 }
 

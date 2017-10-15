@@ -53,8 +53,8 @@
 .set-selector__set--hit {
   position: relative;
 
-  & .set-selector__head,
-  & .set-selector__body {
+  .set-selector__head,
+  .set-selector__body {
     border-left: none;
     border-right: none;
   }
@@ -170,8 +170,8 @@
   }
 
   .set-selector__set--hit {
-    & .set-selector__head,
-    & .set-selector__body {
+    .set-selector__head,
+    .set-selector__body {
       border-left: none;
       border-right: none;
     }
@@ -190,17 +190,17 @@
   .set-selector__set--options {
     display: block;
 
-    & .set-selector__body {
+    .set-selector__body {
       justify-content: flex-start;
       padding-left: 15px;
       border-right: none;
     }
 
-    & .set-selector__body:first-child {
+    .set-selector__body:first-child {
       border-top: $setborder;
     }
 
-    & .set-selector__option {
+    .set-selector__option {
       display: block;
       text-transform: none;
       padding-top: 6px;
