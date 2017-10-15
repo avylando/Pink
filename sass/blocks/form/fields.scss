@@ -339,8 +339,6 @@
   }
 
   .fields__set--contacts {
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     padding-bottom: 14px;
 
@@ -349,13 +347,15 @@
     }
   }
 
+  .fields__contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .fields__contact-block {
     width: 45.73%;
     margin-top: 27px;
-  }
-
-  .fields__contact-block--phone {
-    margin-right: 70px;
   }
 
   .fields__set--checkboxes {
