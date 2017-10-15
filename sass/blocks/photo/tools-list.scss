@@ -33,6 +33,12 @@
   margin-top: 2px;
 }
 
+.tools-list__icon--active {
+  .tools-list__icon-path {
+    fill: $pink-mod;
+  }
+}
+
 .tools-list__range {
   display: none;
 }

@@ -13,7 +13,6 @@
 .range-control__toggle {
   position: absolute;
   top: -6px;
-  right: 56px;
   width: 14px;
   height: 14px;
   background-color: $grey-mod;
@@ -26,6 +25,24 @@
   }
 }
 
+.range-control--clip {
+  .range-control__toggle {
+    right: 56px;
+  }
+}
+
+.range-control--fill {
+  .range-control__toggle {
+    right: 181px;
+  }
+}
+
+.range-control--contrast {
+  .range-control__toggle {
+    right: 110px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .range-control {
     width: 86.55%;
@@ -34,18 +51,6 @@
   .range-control--clip {
     .range-control__toggle {
       right: 60px;
-    }
-  }
-
-  .range-control--fill {
-    .range-control__toggle {
-      right: 181px;
-    }
-  }
-
-  .range-control--contrast {
-    .range-control__toggle {
-      right: 110px;
     }
   }
 }
