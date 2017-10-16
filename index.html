@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пинк. Главная страница</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <!-- Pixel Glass -->
   <style>
     HTML {
@@ -562,15 +565,21 @@
           function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 16,
-              center: {lat: 59.936273, lng: 30.320952}
+              center: {lat: 59.936160, lng: 30.321783}
             });
 
-            var image = "img/icon-map-marker.svg";
-            var beachMarker = new google.maps.Marker({
-              position: {lat: 59.936273, lng: 30.320952},
-              map: map,
-              icon: image
+            var image = {
+            url: 'img/icon-map-marker.svg',
+            scaledSize: new google.maps.Size(36, 36),
+            }
+
+            var marker = new google.maps.Marker({
+            position: {lat: 59.936160, lng: 30.321783},
+            map: map,
+            optimized: false,
+            icon: image
             });
+
           }
         </script>
         <script async defer

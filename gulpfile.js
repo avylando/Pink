@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
-var jsmin = require("gulp-jsmin");
+var jsminify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -53,7 +53,7 @@ gulp.task("html", function() {
 
 gulp.task("jsminify", function() {
   return gulp.src("js/*.js")
-  .pipe(jsmin())
+  .pipe(jsminify())
   .pipe(rename({suffix: ".min"}))
   .pipe(gulp.dest("js"));
 });
@@ -78,14 +78,14 @@ gulp.task("js", function(done) {
   );
 })
 
-gulp.task("img-opt", function() {
+gulp.task("imagemin", function() {
   return gulp.src("img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("img"));
 });
 
 gulp.task("webp", function() {
