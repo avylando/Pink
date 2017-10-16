@@ -33,6 +33,12 @@
   margin-top: 2px;
 }
 
+.tools-list__icon--active {
+  .tools-list__icon-path {
+    fill: $pink-mod;
+  }
+}
+
 .tools-list__range {
   display: none;
 }
@@ -52,6 +58,11 @@
     padding-top: 22px;
     padding-bottom: 24px;
     border-bottom: $setborder;
+
+    &:hover .tools-list__icon-path,
+    &:focus .tools-list__icon-path {
+      fill: $pink-mod;
+    }
   }
 
   .tools-list__icon--clip {

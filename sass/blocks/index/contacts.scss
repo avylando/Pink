@@ -15,7 +15,7 @@
 .contacts__text {
   color: $pink-mod;
   line-height: $line-auto;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   margin-top: 0;
 
   @include big-ttl-style;
@@ -45,23 +45,23 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .contacts__block {
-    width: 50%;
+    width: 45%;
   }
 
   .contacts__block--phone,
   .contacts__block--mail {
-    padding-right: 30px;
+    padding-right: 0;
     margin-bottom: 16px;
   }
 
   .contacts__block--adress {
-    align-self: center;
+    margin: 0 auto;
 
     .contacts__title {
       padding-top: 9px;

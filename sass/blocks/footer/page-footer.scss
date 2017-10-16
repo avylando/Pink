@@ -36,10 +36,10 @@
 
   &:active .page-footer__icon-path {
     fill: $pink-mod-op;
-  }
 
-  &:active .page-footer__icon-path--word {
-    fill: $firmcolor-op;
+    &--word {
+      fill: $firmcolor-op;
+    }
   }
 }
 
@@ -66,14 +66,15 @@
 }
 
 .page-footer__academy-link {
+  fill: $pink-mod;
   outline: none;
 
-  &:hover .page-footer__academy-logo-path,
-  &:focus .page-footer__academy-logo-path {
+  &:hover,
+  &:focus {
     fill: $firmcolor;
   }
 
-  &:active .page-footer__academy-logo-path {
+  &:active {
     fill: $darkgrey-mod;
   }
 }
