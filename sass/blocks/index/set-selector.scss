@@ -107,7 +107,7 @@
 .set-selector__body {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
+  align-items: center;
   padding-left: 25px;
   padding-right: 16px;
   background-color: #ffffff;
@@ -118,7 +118,6 @@
 
 .set-selector__option {
   display: block;
-  box-sizing: border-box;
   text-transform: uppercase;
   line-height: $maxline-h;
   padding-top: 17px;
@@ -150,7 +149,6 @@
 
   .set-selector__body {
     justify-content: center;
-    align-items: center;
     height: 47px;
   }
 

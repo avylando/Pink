@@ -60,7 +60,20 @@
   padding-top: 10px;
 }
 
-.photo-block__likes-text {
+.photo-block__like-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.photo-block__like-icon {
+  &:hover {
+    fill: $pink-mod;
+  }
+}
+
+.photo-block__like-text {
   padding-left: 20px;
 }
 
@@ -106,12 +119,12 @@
     padding-top: 13px;
   }
 
-  .photo-block__likes-text {
+  .photo-block__like-text {
     order: 1;
     padding-left: 0;
   }
 
-  .photo-block__likes-icon {
+  .photo-block__like-button {
     order: 2;
   }
 

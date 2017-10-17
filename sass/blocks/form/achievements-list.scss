@@ -19,6 +19,7 @@
 .achievements-list__label {
   position: relative;
   padding-left: 68px;
+  outline: none;
   cursor: pointer;
 
   @include input-label;
