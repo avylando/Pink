@@ -1,13 +1,16 @@
-.text-block__content {
-  line-height: $maxline-h;
+.text-block {
   padding-top: 23px;
   padding-bottom: 42px;
+}
+
+.text-block__content {
+  line-height: $maxline-h;
 
   @include textblock;
 }
 
 @media (min-width: $tablet-width) {
-  .text-block__content {
+  .text-block {
     font-size: $ttlfont;
     padding-top: 49px;
     padding-bottom: 69px;
@@ -15,7 +18,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .text-block__content {
+  .text-block {
     padding-top: 7px;
     padding-bottom: 66px;
   }

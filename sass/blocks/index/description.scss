@@ -26,6 +26,11 @@
   .description__title {
     font-size: 40px;
     padding-top: 0;
+
+    &:last-child {
+      padding-left: 140px;
+      padding-right: 140px;
+    }
   }
 }
 
