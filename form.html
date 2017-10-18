@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пинк. Конкурс</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <!-- Pixel Glass -->
   <style>
     HTML {
@@ -121,7 +124,7 @@
               </g>
             </svg>
           </a>
-          <button class="page-header__toggle page-header__toggle--burger" type="button">
+          <button class="page-header__toggle page-header__toggle--burger page-header__toggle--nojs" type="button" aria-label="menu-toggle">
             <svg class="page-header__cross-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path class="page-header__cross-icon-path" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
             </svg>
@@ -195,27 +198,27 @@
             <ul class="fields__achievements achievements-list">
               <li class="achievements-list__item">
                 <input class="achievements-list__input" id="selfie-shark" name="selfie-shark" type="checkbox" checked>
-                <label class="achievements-list__label" for="selfie-shark">Сделал селфи с акулой</label>
+                <label class="achievements-list__label" for="selfie-shark" tabindex="0">Сделал селфи с акулой</label>
               </li>
               <li class="achievements-list__item">
                 <input class="achievements-list__input" id="sunburn" name="sunburn" type="checkbox" checked>
-                <label class="achievements-list__label" for="sunburn">Обгорел на пляже</label>
+                <label class="achievements-list__label" for="sunburn" tabindex="0">Обгорел на пляже</label>
               </li>
               <li class="achievements-list__item">
                 <input class="achievements-list__input" id="chuck" name="chuck" type="checkbox">
-                <label class="achievements-list__label" for="chuck">Видел Чака Норриса</label>
+                <label class="achievements-list__label" for="chuck" tabindex="0">Видел Чака Норриса</label>
               </li>
               <li class="achievements-list__item">
                 <input class="achievements-list__input" id="souvenirs" name="souvenirs" type="checkbox">
-                <label class="achievements-list__label" for="souvenirs">Накупил сувениров</label>
+                <label class="achievements-list__label" for="souvenirs" tabindex="0">Накупил сувениров</label>
               </li>
               <li class="achievements-list__item">
                 <input class="achievements-list__input" id="tower" name="tower" type="checkbox" checked>
-                <label class="achievements-list__label" for="tower">Удержал башню</label>
+                <label class="achievements-list__label" for="tower" tabindex="0">Удержал башню</label>
               </li>
               <li class="achievements-list__item achievements-list__item--last-child">
                 <input class="achievements-list__input" id="break-hotel" name="break-hotel" type="checkbox">
-                <label class="achievements-list__label" for="break-hotel">Разгромил отель</label>
+                <label class="achievements-list__label" for="break-hotel" tabindex="0">Разгромил отель</label>
               </li>
             </ul>
           </div>
@@ -243,15 +246,15 @@
             <ul class="app-list">
               <li class="app-list__item">
                 <input class="app-list__input" id="iOs" name="application" type="radio" value="iOs" checked>
-                <label class="app-list__label" for="iOs">Pink для iOS</label>
+                <label class="app-list__label" for="iOs" tabindex="0">Pink для iOS</label>
               </li>
               <li class="app-list__item">
                 <input class="app-list__input" id="android" name="application" type="radio" value="android">
-                <label class="app-list__label" for="android">Pink на Android</label>
+                <label class="app-list__label" for="android" tabindex="0">Pink на Android</label>
               </li>
               <li class="app-list__item">
                 <input class="app-list__input" id="win-phone" name="application" type="radio" value="windows-phone">
-                <label class="app-list__label" for="win-phone">Windows Phone</label>
+                <label class="app-list__label" for="win-phone" tabindex="0">Windows Phone</label>
               </li>
             </ul>
           </div>

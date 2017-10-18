@@ -60,21 +60,13 @@
   cursor: pointer;
 
   &:hover .page-header__cross-icon-path,
-  &:focus .page-header__cross-icon-path {
-    fill: $pink-mod;
-  }
-
-  &:active .page-header__cross-icon-path {
-    fill: $pink-mod-op;
-  }
-}
-
-.page-header__burger-icon {
+  &:focus .page-header__cross-icon-path,
   &:hover .page-header__burger-icon-path,
   &:focus .page-header__burger-icon-path {
     fill: $pink-mod;
   }
 
+  &:active .page-header__cross-icon-path,
   &:active .page-header__burger-icon-path {
     fill: $pink-mod-op;
   }

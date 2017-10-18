@@ -131,6 +131,7 @@
     font-size: 30px;
     line-height: $maxline-h;
     width: 240px;
+    padding-top: 16px;
     margin: 0 auto;
     margin-bottom: 25px;
   }
@@ -150,6 +151,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .advantages__illustration {
+    width: 31.6%;
   }
 
   .advantages__illustration--hide {

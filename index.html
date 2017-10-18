@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пинк. Главная страница</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <!-- Pixel Glass -->
   <style>
     HTML {
@@ -120,7 +123,7 @@
               </g>
             </svg>
           </a>
-          <button class="page-header__toggle page-header__toggle--burger page-header__toggle--nojs" type="button">
+          <button class="page-header__toggle page-header__toggle--burger page-header__toggle--nojs" type="button" aria-label="menu-toggle">
             <svg class="page-header__cross-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path class="page-header__cross-icon-path" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
             </svg>
@@ -216,7 +219,7 @@
 
         <div class="description__wrapper">
           <p class="description__title">Устали от серости мегаполиса?</p>
-          <p class="description__title">Нам есть, что вам<br> предложить!</p>
+          <p class="description__title">Нам есть, что вам предложить!</p>
         </div>
       </section>
     </div>
@@ -231,7 +234,7 @@
             </div>
             <div class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
             <div class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -433,7 +436,7 @@
           </div>
           <div class="contacts__block contacts__block--adress">
             <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts__text">ул. Большая <br>Конюшенная, 19/8</p>
+            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
       </div>
@@ -536,12 +539,6 @@
           <span class="page-footer__developed">Разработано</span>
           <h3 class="visually-hidden">HTML Academy</h3>
           <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" tabindex="0">
-            <!-- <svg class="page-footer__academy-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-              y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
-              xml:space="preserve">
-              <path class="page-footer__academy-logo-path" fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"
-              />
-            </svg> -->
             <svg class="page-footer__academy-logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
@@ -562,16 +559,29 @@
           function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 16,
-              center: {lat: 59.936273, lng: 30.320952}
+              center: {lat: 59.936160, lng: 30.321783},
+              scaleControl: true,
+              mapTypeControl: false,
+              fullscreenControl: true,
+              fullscreenControlOptions: {
+                  position: google.maps.ControlPosition.RIGHT_CENTER
+              }
             });
 
-            var image = "img/icon-map-marker.svg";
-            var beachMarker = new google.maps.Marker({
-              position: {lat: 59.936273, lng: 30.320952},
-              map: map,
-              icon: image
+            var image = {
+            url: 'img/icon-map-marker.svg',
+            scaledSize: new google.maps.Size(36, 36),
+            }
+
+            var marker = new google.maps.Marker({
+            position: {lat: 59.936160, lng: 30.321783},
+            map: map,
+            optimized: false,
+            icon: image
             });
+
           }
+
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ZvU65IhoUz5HyCwaxZ_W-Lkdx_OdYTM&callback=initMap">
