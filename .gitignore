@@ -6,6 +6,7 @@
 *.psd
 *.sublime*
 build/
+preview/
 css/*.css
 node_modules/
 npm-debug.*

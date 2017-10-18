@@ -10,34 +10,6 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("../preview/pink-index-mobile.jpg");
-    }
-    /* Планшет */
-
-    @media ( min-width: 660px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("../preview/pink-index-tablet.jpg");
-      }
-    }
-    /* Десктоп */
-
-    @media ( min-width: 960px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("../preview/pink-index-desktop.jpg");
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -288,7 +260,7 @@
 
     <section class="feedbacks-slider">
       <div class="container">
-        <img class="feedbacks-slider__quotes-image" src="img/icon-quotes.svg" alt="quotes">
+        <img class="feedbacks-slider__quotes-image" src="img/icon-quotes.svg" width="79" height="63" alt="quotes">
         <div class="feedbacks-slider__wrapper">
           <button class="feedbacks-slider__arrow feedbacks-slider__arrow--left" type="button">
             <svg class="feedbacks-slider__arrow-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
@@ -347,7 +319,7 @@
               <span class="set-selector__option">Комментарии</span>
             </div>
           </div>
-          <div class="set-selector__set set-selector__set">
+          <div class="set-selector__set">
             <div class="set-selector__head">
               <h3 class="set-selector__title">База</h3>
               <p class="set-selector__price">1,99 USD</p>
@@ -368,9 +340,9 @@
           <div class="set-selector__set set-selector__set--hit">
             <div class="set-selector__head">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/bg-hit.svg">
-                <source media="(min-width: 660px)" srcset="img/bg-hit-tablet.svg">
-                <img class="set-selector__hit-bg" src="img/bg-hit.svg" alt="Хит">
+                <source media="(min-width: 960px)" srcset="img/bg-hit.png">
+                <source media="(min-width: 660px)" srcset="img/bg-hit-tablet.png">
+                <img class="set-selector__hit-bg" src="img/bg-hit.png" alt="Хит">
               </picture>
               <h3 class="set-selector__title">Стандарт</h3>
               <p class="set-selector__price">3,99 USD</p>
@@ -388,7 +360,7 @@
               <img class="set-selector__check-cross" src="img/icon-no.svg" width="26" height="26" alt="No">
             </div>
           </div>
-          <div class="set-selector__set set-selector__set">
+          <div class="set-selector__set">
             <div class="set-selector__head">
               <h3 class="set-selector__title">Анлим</h3>
               <p class="set-selector__price">9,99 USD</p>
@@ -559,7 +531,13 @@
           function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 16,
-              center: {lat: 59.936160, lng: 30.321783}
+              center: {lat: 59.936160, lng: 30.321783},
+              streetViewControl: false,
+              mapTypeControl: false,
+              fullscreenControl: true,
+              fullscreenControlOptions: {
+                  position: google.maps.ControlPosition.RIGHT_CENTER
+              }
             });
 
             var image = {
@@ -575,6 +553,7 @@
             });
 
           }
+
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ZvU65IhoUz5HyCwaxZ_W-Lkdx_OdYTM&callback=initMap">

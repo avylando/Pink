@@ -10,34 +10,6 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("../preview/pink-photo-mobile.jpg");
-    }
-    /* Планшет */
-
-    @media ( min-width: 660px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("../preview/pink-photo-tablet.jpg");
-      }
-    }
-    /* Десктоп */
-
-    @media ( min-width: 960px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("../preview/pink-photo-desktop.jpg");
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -260,7 +232,7 @@
                 <button class="photo-block__like-button" type="button" aria-label="like">
                   <svg class="photo-block__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
-                   </svg>
+                  </svg>
                 </button>
                 <span class="photo-block__like-text">Нравится: 666</span>
               </div>
