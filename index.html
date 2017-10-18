@@ -559,7 +559,13 @@
           function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 16,
-              center: {lat: 59.936160, lng: 30.321783}
+              center: {lat: 59.936160, lng: 30.321783},
+              scaleControl: true,
+              mapTypeControl: false,
+              fullscreenControl: true,
+              fullscreenControlOptions: {
+                  position: google.maps.ControlPosition.RIGHT_CENTER
+              }
             });
 
             var image = {
@@ -575,6 +581,7 @@
             });
 
           }
+
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ZvU65IhoUz5HyCwaxZ_W-Lkdx_OdYTM&callback=initMap">
