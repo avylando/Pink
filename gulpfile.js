@@ -127,3 +127,26 @@ gulp.task("build", function(done) {
     done
   );
 });
+
+gulp.task("clean-docs", function() {
+  return del([
+    "docs/css/**",
+    "docs/fonts/**",
+    "docs/js/**",
+    "docs/img/**",
+    "docs/*.html"
+  ])
+});
+
+gulp.task("copy-docs", function() {
+  return gulp.src("build/**")
+  .pipe(gulp.dest("docs"));
+});
+
+gulp.task("docs", function(done) {
+  run(
+    "clean-docs",
+    "copy-docs",
+    done
+  );
+});

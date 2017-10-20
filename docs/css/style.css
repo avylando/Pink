@@ -2574,25 +2574,18 @@ img {
 
 .modal {
   display: none;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  z-index: 1000;
   text-align: center;
   -webkit-box-shadow: 0 8px 10px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 8px 10px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff; }
 
-.modal--send {
-  position: absolute;
-  top: 800px;
-  left: 20%;
-  right: 20%;
-  z-index: 1000; }
-
 .modal--error {
-  position: absolute;
-  top: 1000px;
-  left: 20%;
-  right: 20%;
-  padding-bottom: 50px;
-  z-index: 1000; }
+  padding-bottom: 50px; }
 
 .modal__wrapper {
   padding-left: 20px;
