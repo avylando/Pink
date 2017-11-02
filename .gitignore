@@ -5,9 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
-build/
 preview/
-css/*.css
 node_modules/
+phpmailer/
+build/
 npm-debug.*
 Thumbs.db
