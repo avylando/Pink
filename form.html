@@ -126,7 +126,7 @@
 
     <section class="competition">
       <div class="container">
-        <form class="competition__form fields" action="#" method="GET">
+        <form class="competition__form fields" action="telegram.php" method="POST" enctype="multipart/form-data">
           <div class="fields__set fields__set--personal">
             <div class="fields__line">
               <label class="fields__label" for="surname">Фамилия:</label>
@@ -211,7 +211,7 @@
             <textarea class="fields__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <div class="fields__button-block">
-            <button class="fields__button square-button" id="button_submit" type="button">Отправить форму</button>
+            <button class="fields__button square-button" id="button_submit" type="submit">Отправить форму</button>
             <p class="fields__note">
               <span class="fields__note-star">*</span> — обязательные<span class="fields__note-plus"> для заполнения</span>              поля
             </p>

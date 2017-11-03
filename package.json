@@ -48,7 +48,7 @@
     "editorconfig": "editorconfig-cli",
     "start": "gulp serve",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
-    "test": "npm run editorconfig \u0026\u0026 npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint",
     "docs": "gulp docs"
   },
   "version": "0.1.0"
